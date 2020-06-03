@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		.page {
+			margin: 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 20px;
+		}
+
+		.video {
+			position: relative;
+			width: 100%;
+			height: 0;
+			padding-bottom: 56.25%;
+			background-color: #000000;
+		}
+
+		.video__embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+	</style>
+</head>
+<body class="page">
+	<div class="video">
+		<iframe class="video__embed" width="512" height="288"
+			src="https://www.youtube.com/embed/neHA4MJwpnY"></iframe>
+	</div>
+	<div class="video">
+		<iframe class="video__embed" width="512" height="288"
+			src="https://www.youtube.com/embed/neHA4MJwpnY"></iframe>
+	</div>
+	<div class="video">
+		<iframe class="video__embed" width="512" height="288"
+			src="https://www.youtube.com/embed/neHA4MJwpnY"></iframe>
+	</div>
+	<div class="video">
+		<iframe class="video__embed" width="512" height="288"
+			src="https://www.youtube.com/embed/neHA4MJwpnY"></iframe>
+	</div>
+</body>
+</html>

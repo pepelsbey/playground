@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Shower</title>
+	<style>
+		body {
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<shower-deck>
+		<shower-slide>
+			<h2>Slide One</h2>
+		</shower-slide>
+		<shower-slide>
+			<h2>Slide Two</h2>
+			<style slot="styles">
+				::slotted(h2) {
+					color: tomato;
+				}
+			</style>
+		</shower-slide>
+		<shower-slide>
+			<h2>Slide Three</h2>
+			<style slot="styles">
+				::slotted(h2) {
+					color: limegreen;
+				}
+			</style>
+		</shower-slide>
+	</shower-deck>
+	<script src="deck/deck.js"></script>
+	<script src="slide/slide.js"></script>
+</body>
+</html>

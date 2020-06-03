@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* Page */
+.page {
+  margin: 0;
+  font-family: sans-serif; }
+
+.page__title {
+  margin: 0;
+  padding: 20px; }
+
+/* Card Set */
+.card-set {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: silver; }
+
+/* Card */
+.card {
+  padding: 5px 20px;
+  background-color: whitesmoke;
+  color: black; }
+
+.card__title::before {
+  content: "🐼 ";
+  line-height: 1; }

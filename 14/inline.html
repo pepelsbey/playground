@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Чекбокс: Инлайном</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 25px;
+			font-family: sans-serif;
+		}
+
+		/* Option */
+
+		.option {
+			display: block;
+			margin-bottom: 0.5em;
+		}
+
+		/* Check */
+
+		.check {
+			padding-left: 1.2em;
+		}
+
+		.check__input {
+			position: absolute;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+
+		.check__box {
+			position: absolute;
+			margin-left: -1.2em;
+			width: 1em;
+			height: 1em;
+		}
+
+		.check__focus {
+			fill: none;
+		}
+
+		.check__square {
+			fill: #ffffff;
+			stroke: #4a90e2;
+			stroke-width: 2px;
+		}
+
+		.check__mark {
+			fill: none;
+			stroke: #ffffff;
+			stroke-width: 3px;
+		}
+
+		/* Checked */
+
+		.check__input:checked + * .check__square {
+			fill: #4a90e2;
+		}
+
+		/* Focused */
+
+		.check__input:focus + * .check__focus {
+			fill: #7ed321;
+		}
+
+		/* Disabled */
+
+		.check__input:disabled + * .check__square {
+			stroke: #9b9b9b;
+		}
+
+		.check__input:checked:disabled + * .check__square {
+			fill: #9b9b9b;
+		}
+	</style>
+</head>
+<body>
+	<label class="check option">
+		<input class="check__input" type="checkbox">
+		<svg class="check__box" viewBox="0 0 20 20">
+			<rect class="check__focus" width="20" height="20" rx="4"/>
+			<rect class="check__square" x="3" y="3" width="14" height="14" rx="2"/>
+			<polyline class="check__mark" points="5 9 9 13 15 6"/>
+		</svg>
+		Первый
+	</label>
+	<label class="check option">
+		<input class="check__input" type="checkbox" checked>
+		<svg class="check__box" viewBox="0 0 20 20">
+			<rect class="check__focus" width="20" height="20" rx="4"/>
+			<rect class="check__square" x="3" y="3" width="14" height="14" rx="2"/>
+			<polyline class="check__mark" points="5 9 9 13 15 6"/>
+		</svg>
+		Второй
+	</label>
+	<label class="check option">
+		<input class="check__input" type="checkbox" disabled>
+		<svg class="check__box" viewBox="0 0 20 20">
+			<rect class="check__focus" width="20" height="20" rx="4"/>
+			<rect class="check__square" x="3" y="3" width="14" height="14" rx="2"/>
+			<polyline class="check__mark" points="5 9 9 13 15 6"/>
+		</svg>
+		Третий
+	</label>
+	<label class="check option">
+		<input class="check__input" type="checkbox" checked disabled>
+		<svg class="check__box" viewBox="0 0 20 20">
+			<rect class="check__focus" width="20" height="20" rx="4"/>
+			<rect class="check__square" x="3" y="3" width="14" height="14" rx="2"/>
+			<polyline class="check__mark" points="5 9 9 13 15 6"/>
+		</svg>
+		Четвёртый
+	</label>
+</body>
+</html>

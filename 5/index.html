@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>5. Политех, магический JPEG, ненужная форма и object-fit на SVG</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		.image {
+			float: left;
+			width: 50%;
+			height: 256px;
+			overflow: hidden;
+		}
+
+		.image--cover {
+			object-fit: cover;
+		}
+
+		.image--fake {
+			background-size: cover;
+			background-position: center;
+		}
+
+		.image--poly {
+			font-family: 'object-fit: cover';
+		}
+	</style>
+</head>
+<body>
+	<img class="image image--cover" src="images/picture.jpg?img"
+		 alt="Велик, пристёгнутый за перила.">
+
+	<svg role="image" aria-label="Велик, пристёгнутый за перила."
+		 preserveAspectRatio="xMidYMid slice"
+		 viewBox="0 0 1024 640" class="image">
+		<image width="100%" height="100%" xlink:href="images/picture.jpg?svg"></image>
+	</svg>
+
+	<div role="image" aria-label="Велик, пристёгнутый за перила."
+		 style="background-image: url(images/picture.jpg?fake)"
+		 class="image image--fake"></div>
+
+	 <img class="image image--cover image--poly" src="images/picture.jpg?poly"
+ 		  alt="Велик, пристёгнутый за перила.">
+
+	  <script src="script.js"></script>
+	  <script>
+	  	  objectFitImages();
+	  </script>
+</body>
+</html>

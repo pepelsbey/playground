@@ -1,0 +1,83 @@
+/* Page */
+
+.page {
+    font-family: sans-serif;
+}
+
+.page__body {
+    margin: 0;
+}
+
+/* Header */
+
+.header {
+    display: grid;
+    grid-template-columns:
+        min-content
+        1fr
+        min-content;
+    column-gap: 50px;
+    row-gap: 25px;
+    padding: 35px 50px;
+    background-color: powderblue;
+}
+
+/* Logo */
+
+.logo {
+    width: 128px;
+    height: 64px;
+    background-color: mediumseagreen;
+}
+
+/* Search */
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+}
+
+.search__input {
+    margin: 0;
+    padding: 20px;
+    border: none;
+    font-size: 20px;
+    font-family: inherit;
+}
+
+.search__button {
+    margin: 0;
+    padding: 20px;
+    border: none;
+    background-color: palevioletred;
+    color: white;
+    font-size: 20px;
+    font-family: inherit;
+}
+
+/* Login */
+
+.login {
+    width: 128px;
+    background-color: mediumpurple;
+}
+
+/* Options */
+
+.options {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: stretch;
+    gap: 20px;
+    grid-row-start: 2;
+    grid-column: 2 / -2;
+}
+
+.options__button {
+    padding: 10px 15px;
+    border: none;
+    background-color: steelblue;
+    color: white;
+    font-size: 16px;
+    font-family: inherit;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Рейтинг: Современный</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 25px;
+            font-family: sans-serif;
+        }
+
+        /* Rating */
+
+        .rating {
+            margin: 0 0 1em 0;
+            padding: 0;
+            border: none;
+        }
+
+        /* Caption */
+
+        .rating__caption {
+            margin-bottom: 0.5em;
+            padding: 0;
+        }
+
+        /* Group */
+
+        .rating__group {
+            position: relative;
+            width: 10em;
+            height: 2em;
+            background-image: url(images/off.svg);
+            background-size: 2em auto;
+            background-repeat: repeat-x;
+        }
+
+        .rating__group:focus-within {
+            outline: 0.2em solid #4a90e2;
+            outline-offset: 0.2em;
+        }
+
+        /* Star */
+
+        .rating__star {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            height: 2em;
+            font-size: inherit;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-size: 2em auto;
+            background-repeat: repeat-x;
+        }
+
+        .rating__star:focus {
+            outline: none;
+        }
+
+        .rating__star:hover,
+        .rating__star:checked {
+            background-image: url(images/on.svg);
+        }
+
+        .rating__star:hover ~ .rating__star {
+            background-image: url(images/off.svg);
+        }
+
+        /* Options */
+
+        .rating__star:nth-of-type(1) {
+            z-index: 5;
+            width: 2em;
+        }
+
+        .rating__star:nth-of-type(2) {
+            z-index: 4;
+            width: 4em;
+        }
+
+        .rating__star:nth-of-type(3) {
+            z-index: 3;
+            width: 6em;
+        }
+
+        .rating__star:nth-of-type(4) {
+            z-index: 2;
+            width: 8em;
+        }
+
+        .rating__star:nth-of-type(5) {
+            z-index: 1;
+            width: 10em;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="rating">
+        <legend class="rating__caption">Самочувствие</legend>
+        <div class="rating__group">
+            <input class="rating__star" type="radio" name="health" value="1" aria-label="Ужасно" checked>
+            <input class="rating__star" type="radio" name="health" value="2" aria-label="Сносно">
+            <input class="rating__star" type="radio" name="health" value="3" aria-label="Нормально">
+            <input class="rating__star" type="radio" name="health" value="4" aria-label="Хорошо">
+            <input class="rating__star" type="radio" name="health" value="5" aria-label="Отлично">
+        </div>
+    </fieldset>
+    <fieldset class="rating">
+        <legend class="rating__caption">Настроение</legend>
+        <div class="rating__group">
+            <input class="rating__star" type="radio" name="mood" value="1" aria-label="Ужасно">
+            <input class="rating__star" type="radio" name="mood" value="2" aria-label="Сносно">
+            <input class="rating__star" type="radio" name="mood" value="3" aria-label="Нормально" checked>
+            <input class="rating__star" type="radio" name="mood" value="4" aria-label="Хорошо">
+            <input class="rating__star" type="radio" name="mood" value="5" aria-label="Отлично">
+        </div>
+    </fieldset>
+    <fieldset class="rating">
+        <legend class="rating__caption">Вообще</legend>
+        <div class="rating__group">
+            <input class="rating__star" type="radio" name="general" value="1" aria-label="Ужасно">
+            <input class="rating__star" type="radio" name="general" value="2" aria-label="Сносно">
+            <input class="rating__star" type="radio" name="general" value="3" aria-label="Нормально">
+            <input class="rating__star" type="radio" name="general" value="4" aria-label="Хорошо">
+            <input class="rating__star" type="radio" name="general" value="5" aria-label="Отлично" checked>
+        </div>
+    </fieldset>
+</body>
+</html>

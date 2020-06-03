@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Рейтинг: Совместимый</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 25px;
+            font-family: sans-serif;
+        }
+
+        /* Rating */
+
+        .rating {
+            margin: 0 0 1em 0;
+            padding: 0;
+            border: none;
+        }
+
+        /* Caption */
+
+        .rating__caption {
+            margin-bottom: 0.5em;
+            padding: 0;
+        }
+
+        /* Group */
+
+        .rating__group {
+            position: relative;
+            width: 10em;
+            height: 2em;
+            background-image: url(images/off.svg);
+            background-size: 2em 1.9em;
+            background-repeat: repeat-x;
+        }
+
+        /* Input */
+
+        .rating__input {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+        }
+
+        .rating__input:focus ~ .rating__focus {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            outline: 0.2em solid #4a90e2;
+            outline-offset: 0.2em;
+        }
+
+        /* Star */
+
+        .rating__star {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            height: 2em;
+            background-size: 2em 1.9em;
+            background-repeat: repeat-x;
+        }
+
+        .rating__star:hover,
+        .rating__input:checked + .rating__star {
+            background-image: url(images/on.svg);
+        }
+
+        .rating__star:hover ~ .rating__star {
+            background-image: url(images/off.svg);
+        }
+
+        /* Options */
+
+        .rating__star:nth-of-type(1) {
+            z-index: 5;
+            width: 2em;
+        }
+
+        .rating__star:nth-of-type(2) {
+            z-index: 4;
+            width: 4em;
+        }
+
+        .rating__star:nth-of-type(3) {
+            z-index: 3;
+            width: 6em;
+        }
+
+        .rating__star:nth-of-type(4) {
+            z-index: 2;
+            width: 8em;
+        }
+
+        .rating__star:nth-of-type(5) {
+            z-index: 1;
+            width: 10em;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="rating">
+        <legend class="rating__caption">Самочувствие</legend>
+        <div class="rating__group">
+            <input class="rating__input" type="radio" name="health" id="health-1" value="1" checked>
+            <label class="rating__star" for="health-1" aria-label="Ужасно"></label>
+
+            <input class="rating__input" type="radio" name="health" id="health-2" value="2">
+            <label class="rating__star" for="health-2" aria-label="Сносно"></label>
+
+            <input class="rating__input" type="radio" name="health" id="health-3" value="3">
+            <label class="rating__star" for="health-3" aria-label="Нормально"></label>
+
+            <input class="rating__input" type="radio" name="health" id="health-4" value="4">
+            <label class="rating__star" for="health-4" aria-label="Хорошо"></label>
+
+            <input class="rating__input" type="radio" name="health" id="health-5" value="5">
+            <label class="rating__star" for="health-5" aria-label="Отлично"></label>
+
+            <div class="rating__focus"></div>
+        </div>
+    </fieldset>
+    <fieldset class="rating">
+        <legend class="rating__caption">Настроение</legend>
+        <div class="rating__group">
+            <input class="rating__input" type="radio" name="mood" id="mood-1" value="1">
+            <label class="rating__star" for="mood-1" aria-label="Ужасно"></label>
+
+            <input class="rating__input" type="radio" name="mood" id="mood-2" value="2">
+            <label class="rating__star" for="mood-2" aria-label="Сносно"></label>
+
+            <input class="rating__input" type="radio" name="mood" id="mood-3" value="3" checked>
+            <label class="rating__star" for="mood-3" aria-label="Нормально"></label>
+
+            <input class="rating__input" type="radio" name="mood" id="mood-4" value="4">
+            <label class="rating__star" for="mood-4" aria-label="Хорошо"></label>
+
+            <input class="rating__input" type="radio" name="mood" id="mood-5" value="5">
+            <label class="rating__star" for="mood-5" aria-label="Отлично"></label>
+
+            <div class="rating__focus"></div>
+        </div>
+    </fieldset>
+    <fieldset class="rating">
+        <legend class="rating__caption">Вообще</legend>
+        <div class="rating__group">
+            <input class="rating__input" type="radio" name="general" id="general-1" value="1">
+            <label class="rating__star" for="general-1" aria-label="Ужасно"></label>
+
+            <input class="rating__input" type="radio" name="general" id="general-2" value="2">
+            <label class="rating__star" for="general-2" aria-label="Сносно"></label>
+
+            <input class="rating__input" type="radio" name="general" id="general-3" value="3">
+            <label class="rating__star" for="general-3" aria-label="Нормально"></label>
+
+            <input class="rating__input" type="radio" name="general" id="general-4" value="4">
+            <label class="rating__star" for="general-4" aria-label="Хорошо"></label>
+
+            <input class="rating__input" type="radio" name="general" id="general-5" value="5" checked>
+            <label class="rating__star" for="general-5" aria-label="Отлично"></label>
+
+            <div class="rating__focus"></div>
+        </div>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Рейтинг: Простой</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 25px;
+            font-family: sans-serif;
+        }
+
+        /* Rating */
+
+        .rating {
+            margin: 0 0 1em 0;
+            padding: 0;
+            border: none;
+        }
+
+        /* Caption */
+
+        .rating__caption {
+            margin-bottom: 0.5em;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="rating">
+        <legend class="rating__caption">Самочувствие</legend>
+        <input type="radio" name="health" value="1" aria-label="Ужасно" checked>
+        <input type="radio" name="health" value="2" aria-label="Сносно">
+        <input type="radio" name="health" value="3" aria-label="Нормально">
+        <input type="radio" name="health" value="4" aria-label="Хорошо">
+        <input type="radio" name="health" value="5" aria-label="Отлично">
+    </fieldset>
+    <fieldset class="rating">
+        <legend class="rating__caption">Настроение</legend>
+        <input type="radio" name="mood" value="1" aria-label="Ужасно">
+        <input type="radio" name="mood" value="2" aria-label="Сносно">
+        <input type="radio" name="mood" value="3" aria-label="Нормально" checked>
+        <input type="radio" name="mood" value="4" aria-label="Хорошо">
+        <input type="radio" name="mood" value="5" aria-label="Отлично">
+    </fieldset>
+    <fieldset class="rating">
+        <legend class="rating__caption">Вообще</legend>
+        <input type="radio" name="general" value="1" aria-label="Ужасно">
+        <input type="radio" name="general" value="2" aria-label="Сносно">
+        <input type="radio" name="general" value="3" aria-label="Нормально">
+        <input type="radio" name="general" value="4" aria-label="Хорошо">
+        <input type="radio" name="general" value="5" aria-label="Отлично" checked>
+    </fieldset>
+</body>
+</html>

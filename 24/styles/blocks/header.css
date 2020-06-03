@@ -1,0 +1,46 @@
+/* Header */
+
+.header {
+    display: grid;
+    padding: 16px;
+}
+
+@media (width > 736px) {
+    .header {
+        padding-left: 24px;
+        padding-right: 24px;
+        grid-template-columns: max-content max-content;
+        justify-content: space-between;
+    }
+}
+
+/* Logo */
+
+@media (width <= 736px) {
+    .header__logo {
+        z-index: 1;
+    }
+}
+
+@media (width > 736px) {
+    .header__logo {
+        align-self: start;
+    }
+}
+
+/* Menu */
+
+@media (width <= 736px) {
+    .header__menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
+@media (width > 736px) {
+    .header__menu {
+        align-self: center;
+    }
+}

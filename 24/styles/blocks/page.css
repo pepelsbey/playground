@@ -1,0 +1,10 @@
+/* Page */
+
+.page {
+    line-height: 1.5;
+    font-family: 'Dewi', sans-serif;
+}
+
+.page__body {
+    margin: 0;
+}

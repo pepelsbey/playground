@@ -1,0 +1,40 @@
+body {
+    padding: 50px;
+    background-color: gainsboro;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    font-size: 20px;
+}
+
+nav {
+    display: block;
+}
+
+/* Menu */
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    line-height: 1.1;
+    font-size: 25px;
+}
+
+/* Item */
+
+.menu__item {
+    display: block;
+    background-color: white;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.menu__item:hover,
+.menu__item:focus {
+    outline: none;
+    background-color: tomato;
+    color: white;
+}
