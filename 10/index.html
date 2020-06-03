@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>10. Skillbox, оптимизация графики, Squoosh и элемент picture</title>
-	<style>
-		img {
-			max-width: 100%;
-		}
-	</style>
+    <meta charset="utf-8">
+    <title>10. Skillbox, оптимизация графики, Squoosh и элемент picture</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
-	<picture>
-		<source srcset="images/wide@1x.webp 1x,
-						images/wide@2x.webp 2x"
-				media="(min-width: 600px)"
-				type="image/webp">
-		<source srcset="images/wide@1x.png 1x,
-						images/wide@2x.png 2x"
-				media="(min-width: 600px)">
-		<source srcset="images/square@1x.webp 1x,
-						images/square@2x.webp 2x"
-				type="image/webp">
-		<img src="images/square@1x.png"
-			 srcset="images/square@2x.png 2x"
-			 alt="Девушка пьёт кофе">
-	</picture>
+    <picture>
+        <source srcset="images/wide@1x.webp 1x,
+                        images/wide@2x.webp 2x"
+                media="(min-width: 600px)"
+                type="image/webp">
+        <source srcset="images/wide@1x.png 1x,
+                        images/wide@2x.png 2x"
+                media="(min-width: 600px)">
+        <source srcset="images/square@1x.webp 1x,
+                        images/square@2x.webp 2x"
+                type="image/webp">
+        <img src="images/square@1x.png"
+             srcset="images/square@2x.png 2x"
+             alt="Девушка пьёт кофе">
+    </picture>
 </body>
 </html>

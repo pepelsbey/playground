@@ -1,90 +1,90 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<title>Чекбокс: Картинки</title>
-	<style>
-		body {
-			margin: 0;
-			padding: 25px;
-			font-family: sans-serif;
-		}
+    <meta charset="utf-8">
+    <title>Чекбокс: Картинки</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 25px;
+            font-family: sans-serif;
+        }
 
-		/* Option */
+        /* Option */
 
-		.option {
-			display: block;
-			margin-bottom: 0.5em;
-		}
+        .option {
+            display: block;
+            margin-bottom: 0.5em;
+        }
 
-		/* Check */
+        /* Check */
 
-		.check {
-			padding-left: 1.2em;
-		}
+        .check {
+            padding-left: 1.2em;
+        }
 
-		.check__input {
-			position: absolute;
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			appearance: none;
-		}
+        .check__input {
+            position: absolute;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
 
-		.check__box {
-			position: absolute;
-			margin-left: -1.2em;
-			width: 1em;
-			height: 1em;
-			background-image: url(images/off.svg);
-		}
+        .check__box {
+            position: absolute;
+            margin-left: -1.2em;
+            width: 1em;
+            height: 1em;
+            background-image: url(images/off.svg);
+        }
 
-		/* Checked */
+        /* Checked */
 
-		.check__input:checked + .check__box {
-			background-image: url(images/on.svg);
-		}
+        .check__input:checked + .check__box {
+            background-image: url(images/on.svg);
+        }
 
-		/* Focused */
+        /* Focused */
 
-		.check__input:focus + .check__box {
-			background-image: url(images/off-focused.svg);
-		}
+        .check__input:focus + .check__box {
+            background-image: url(images/off-focused.svg);
+        }
 
-		.check__input:checked:focus + .check__box {
-			background-image: url(images/on-focused.svg);
-		}
+        .check__input:checked:focus + .check__box {
+            background-image: url(images/on-focused.svg);
+        }
 
-		/* Disabled */
+        /* Disabled */
 
-		.check__input:disabled + .check__box {
-			background-image: url(images/off-disabled.svg);
-		}
+        .check__input:disabled + .check__box {
+            background-image: url(images/off-disabled.svg);
+        }
 
-		.check__input:checked:disabled + .check__box {
-			background-image: url(images/on-disabled.svg);
-		}
-	</style>
+        .check__input:checked:disabled + .check__box {
+            background-image: url(images/on-disabled.svg);
+        }
+    </style>
 </head>
 <body>
-	<label class="check option">
-		<input class="check__input" type="checkbox">
-		<span class="check__box"></span>
-		Первый
-	</label>
-	<label class="check option">
-		<input class="check__input" type="checkbox" checked>
-		<span class="check__box"></span>
-		Второй
-	</label>
-	<label class="check option">
-		<input class="check__input" type="checkbox" disabled>
-		<span class="check__box"></span>
-		Третий
-	</label>
-	<label class="check option">
-		<input class="check__input" type="checkbox" checked disabled>
-		<span class="check__box"></span>
-		Четвёртый
-	</label>
+    <label class="check option">
+        <input class="check__input" type="checkbox">
+        <span class="check__box"></span>
+        Первый
+    </label>
+    <label class="check option">
+        <input class="check__input" type="checkbox" checked>
+        <span class="check__box"></span>
+        Второй
+    </label>
+    <label class="check option">
+        <input class="check__input" type="checkbox" disabled>
+        <span class="check__box"></span>
+        Третий
+    </label>
+    <label class="check option">
+        <input class="check__input" type="checkbox" checked disabled>
+        <span class="check__box"></span>
+        Четвёртый
+    </label>
 </body>
 </html>
