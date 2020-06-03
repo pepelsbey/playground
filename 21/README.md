@@ -1,3 +1,4 @@
 # 21. Направляющие для адаптивной сетки на градиентах и кастомных свойствах
 
-[Подробнее в видео](https://youtu.be/WBrngvT78gw)
+- [Видео](https://youtu.be/WBrngvT78gw)
+- [Демо](https://pepelsbey.github.io/playground/21/)
