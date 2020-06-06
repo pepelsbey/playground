@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <title>Веб-стандарты</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="page__body">
+    <header class="header">
+        <div class="header__logo logo">
+            <img class="logo__image" src="images/logo.svg" width="40" height="44" alt="">
+            <p class="logo__title">Веб-стандарты</p>
+            <p class="logo__tagline">Сообщество разработчиков</p>
+        </div>
+        <nav class="header__menu menu">
+            <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
+                <svg class="menu__icon" aria-hidden="true" width="32" height="32">
+                    <use class="menu__icon-menu" href="images/sprite.svg#menu"></use>
+                    <use class="menu__icon-cross" href="images/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <ul class="menu__list" id="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link menu__link--current" href>Статьи</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--inactive">Подкаст</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--inactive">Календарь</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--inactive">О проекте</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--patreon" href>Поддержать</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

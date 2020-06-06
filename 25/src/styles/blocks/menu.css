@@ -1,0 +1,132 @@
+/* Menu */
+
+@media (width <= 736px) {
+    .menu {
+        display: grid;
+    }
+}
+
+/* Button */
+
+@media (width <= 736px) {
+    .menu__button {
+        z-index: 1;
+        display: block;
+        margin: 0;
+        margin-top: 24px;
+        margin-right: 16px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        justify-self: end;
+    }
+}
+
+@media (width > 736px) {
+    .menu__button {
+        display: none;
+    }
+}
+
+/* Icon */
+
+@media (width <= 736px) {
+    .menu__icon {
+        display: block;
+        stroke: var(--basic-black);
+    }
+
+    .menu__icon:hover {
+        stroke: var(--special-neutral);
+    }
+
+    .menu__icon-menu,
+    .menu__button--open .menu__icon-cross {
+        display: block;
+    }
+
+    .menu__icon-cross,
+    .menu__button--open .menu__icon-menu {
+        display: none;
+    }
+}
+
+/* List */
+
+.menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+}
+
+@media (width <= 736px) {
+    .menu__list {
+        display: none;
+        row-gap: 8px;
+        padding-top: 12px;
+        padding-bottom: 22px;
+        padding-left: 64px;
+        box-shadow: 0 50vh 0 50vh var(--special-dark-10a);
+        background-color: var(--basic-white);
+    }
+
+    .menu__list--open {
+        display: grid;
+    }
+}
+
+@media (width > 736px) {
+    .menu__list {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 8px;
+    }
+}
+
+/* Item */
+
+.menu__item {
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+/* Link */
+
+.menu__link {
+    color: var(--special-dark);
+}
+
+.menu__link[href]:hover {
+    color: var(--special-neutral);
+}
+
+.menu__link--current {
+    color: var(--basic-black);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Dewi Expanded', sans-serif;
+}
+
+.menu__link--inactive {
+    color: var(--basic-semi-light);
+}
+
+.menu__link--patreon {
+    padding-left: 18px;
+}
+
+.menu__link--patreon::before {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -18px;
+    width: 16px;
+    height: 16px;
+    content: url('../../images/patreon.svg');
+}
+
+@media (width <= 736px) {
+    .menu__link--patreon {
+        margin-left: -18px;
+    }
+}

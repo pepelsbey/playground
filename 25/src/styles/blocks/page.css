@@ -1,0 +1,12 @@
+/* Page */
+
+.page {
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+    line-height: 1.5;
+    font-family: 'Dewi', sans-serif;
+}
+
+.page__body {
+    margin: 0;
+}
