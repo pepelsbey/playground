@@ -25,8 +25,8 @@ exports.html = html;
 const styles = () => {
     return gulp.src('src/styles/index.css')
         .pipe(postcss([
-            require('autoprefixer'),
             require('postcss-import'),
+            require('autoprefixer'),
             require('postcss-media-minmax'),
             require('postcss-csso'),
         ]))

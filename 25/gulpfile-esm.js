@@ -4,9 +4,9 @@ import postcss from 'gulp-postcss';
 import replace from 'gulp-replace';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
-import autoprefixer from 'autoprefixer';
 import pimport from 'postcss-import';
 import minmax from 'postcss-media-minmax';
+import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import sync from 'browser-sync';
 
@@ -27,9 +27,9 @@ export const html = () => {
 export const styles = () => {
     return gulp.src('src/styles/index.css')
         .pipe(postcss([
-            autoprefixer,
             pimport,
             minmax,
+            autoprefixer,
             csso,
         ]))
         .pipe(replace(/\.\.\//g, ''))

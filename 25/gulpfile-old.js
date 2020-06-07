@@ -23,9 +23,9 @@ gulp.task('html', function() {
 gulp.task('styles', function() {
     return gulp.src('src/styles/index.css')
         .pipe(postcss([
-            require('autoprefixer'),
             require('postcss-import'),
             require('postcss-media-minmax'),
+            require('autoprefixer'),
             require('postcss-csso')
         ]))
         .pipe(replace(/\.\.\//g, ''))
