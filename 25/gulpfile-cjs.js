@@ -26,8 +26,8 @@ const styles = () => {
     return gulp.src('src/styles/index.css')
         .pipe(postcss([
             require('postcss-import'),
-            require('autoprefixer'),
             require('postcss-media-minmax'),
+            require('autoprefixer'),
             require('postcss-csso'),
         ]))
         .pipe(replace(/\.\.\//g, ''))
@@ -105,7 +105,7 @@ const watch = () => {
     gulp.watch('src/scripts/**/*.js', gulp.series(scripts));
     gulp.watch([
         'src/fonts/**/*',
-        'src/images/**/*'
+        'src/images/**/*',
     ], gulp.series(copy));
 }
 

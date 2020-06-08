@@ -97,7 +97,7 @@ export const watch = () => {
     gulp.watch('src/scripts/**/*.js', gulp.series(scripts));
     gulp.watch([
         'src/fonts/**/*',
-        'src/images/**/*'
+        'src/images/**/*',
     ], gulp.series(copy));
 }
 
