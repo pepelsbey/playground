@@ -16,7 +16,7 @@ const html = () => {
         }))
         .pipe(gulp.dest('dist'))
         .pipe(sync.stream());
-}
+};
 
 exports.html = html;
 
@@ -33,7 +33,7 @@ const styles = () => {
         .pipe(replace(/\.\.\//g, ''))
         .pipe(gulp.dest('dist'))
         .pipe(sync.stream());
-}
+};
 
 exports.styles = styles;
 
@@ -47,7 +47,7 @@ const scripts = () => {
         .pipe(terser())
         .pipe(gulp.dest('dist'))
         .pipe(sync.stream());
-}
+};
 
 exports.scripts = scripts;
 
@@ -64,7 +64,7 @@ const copy = () => {
         .pipe(sync.stream({
             once: true
         }));
-}
+};
 
 exports.copy = copy;
 
@@ -79,7 +79,7 @@ const paths = () => {
             /(<script src=")scripts\/(index.js">)/, '$1$2'
         ))
         .pipe(gulp.dest('dist'));
-}
+};
 
 exports.paths = paths;
 
@@ -93,7 +93,7 @@ const server = () => {
             baseDir: 'dist'
         }
     });
-}
+};
 
 exports.server = server;
 
@@ -107,7 +107,7 @@ const watch = () => {
         'src/fonts/**/*',
         'src/images/**/*',
     ], gulp.series(copy));
-}
+};
 
 exports.watch = watch;
 

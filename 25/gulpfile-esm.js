@@ -20,7 +20,7 @@ export const html = () => {
         }))
         .pipe(gulp.dest('dist'))
         .pipe(sync.stream());
-}
+};
 
 // Styles
 
@@ -35,7 +35,7 @@ export const styles = () => {
         .pipe(replace(/\.\.\//g, ''))
         .pipe(gulp.dest('dist'))
         .pipe(sync.stream());
-}
+};
 
 // Scripts
 
@@ -47,7 +47,7 @@ export const scripts = () => {
         .pipe(terser())
         .pipe(gulp.dest('dist'))
         .pipe(sync.stream());
-}
+};
 
 // Copy
 
@@ -62,7 +62,7 @@ export const copy = () => {
         .pipe(sync.stream({
             once: true
         }));
-}
+};
 
 // Paths
 
@@ -75,7 +75,7 @@ export const paths = () => {
             /(<script src=")scripts\/(index.js">)/, '$1$2'
         ))
         .pipe(gulp.dest('dist'));
-}
+};
 
 // Server
 
@@ -87,7 +87,7 @@ export const server = () => {
             baseDir: 'dist'
         }
     });
-}
+};
 
 // Watch
 
@@ -99,7 +99,7 @@ export const watch = () => {
         'src/fonts/**/*',
         'src/images/**/*',
     ], gulp.series(copy));
-}
+};
 
 // Default
 
