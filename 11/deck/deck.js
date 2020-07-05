@@ -8,7 +8,7 @@ customElements.define('shower-deck', class extends HTMLElement {
 
         const template = document.createElement('template');
         template.innerHTML = `
-            <link rel="stylesheet" href="deck.css">
+            <link rel="stylesheet" href="deck/deck.css">
             <slot></slot>
         `;
 

@@ -8,7 +8,7 @@ customElements.define('shower-slide', class extends HTMLElement {
 
         const template = document.createElement('template');
         template.innerHTML = `
-            <link rel="stylesheet" href="slide.css">
+            <link rel="stylesheet" href="slide/slide.css">
             <slot></slot>
             <slot name="styles"></slot>
         `;
