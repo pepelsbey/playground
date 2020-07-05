@@ -1,6 +1,6 @@
 # 23. Веб-сервер на Ubuntu с нуля: nginx, HTTP/2, brotli и HTTPS
 
-- [Видео](https://youtu.be/oanbIqkS9LM)
+[Видео](https://youtu.be/oanbIqkS9LM)
 
 Проверено на Ubuntu 18.04.4 LTS
 
