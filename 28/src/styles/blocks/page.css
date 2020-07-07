@@ -1,0 +1,16 @@
+/* Page */
+
+.page,
+.page__body {
+    height: 100%;
+}
+
+.page {
+    background-color: var(--beige);
+}
+
+.page__body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+}

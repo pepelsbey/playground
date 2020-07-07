@@ -1,0 +1,25 @@
+/* Logo */
+
+.logo {
+    margin: 0;
+    width: 50vmin;
+    height: 50vmin;
+}
+
+.logo__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.logo__back {
+    fill: var(--white);
+}
+
+.logo__left {
+    fill: var(--brown);
+}
+
+.logo__right {
+    fill: var(--red);
+}

@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "browser-sync start --server 'src' --no-notify --no-ui --cwd 'src' --files 'index.html,styles/**/*'",
+    "test": "editorconfig-checker",
+    "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
+    "styles": "postcss src/styles/index.css --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css",
+    "build": "npm run html && npm run styles",
+    "deploy": "cd dist && rsync --archive --compress --delete . pepelsbey@pepelsbey.dev:/var/www/pepelsbey.dev/html/"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "editorconfig-checker": "^3.1.0",
+    "html-minifier": "^4.0.0",
+    "postcss-cli": "^7.1.1",
+    "postcss-csso": "^4.0.0",
+    "postcss-import": "^12.0.1"
+  }
+}
