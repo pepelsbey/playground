@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "browser-sync start --server 'src' --no-notify --no-ui --cwd 'src' --files 'index.html,styles/**/*'",
+    "start": "browser-sync start --server src --no-notify --no-ui --cwd src --files index.html,styles/**/*",
     "test": "editorconfig-checker",
     "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
     "styles": "postcss src/styles/index.css --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css",
