@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "gulp"
+  },
+  "browserslist": [
+    "last 2 version",
+    "not dead",
+    "not ie <= 11",
+    "iOS >= 12"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "autoprefixer": "^9.8.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-terser": "^1.2.0",
+    "postcss-csso": "^4.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-media-minmax": "^4.0.0",
+    "rollup-stream": "^1.24.1",
+    "source": "0.0.3",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "focus-visible": "^5.1.0"
+  }
+}

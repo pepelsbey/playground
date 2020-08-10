@@ -1,0 +1,20 @@
+/* Page */
+
+.page,
+.page__body {
+    height: 100%;
+}
+
+.page {
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+    line-height: 1.5;
+    font-family: 'Dewi', sans-serif;
+}
+
+.page__body {
+    margin: auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
