@@ -1,3 +1,3 @@
-# 31. TODO
+# 31. Хороший и плохой focus, полифил focus-visible и Open Prioritization
 
-- [Видео](TODO)
+- [Видео](https://youtu.be/EHg7DeciuW8)
