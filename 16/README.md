@@ -1,4 +1,4 @@
-# 16. Звёздный рейтинг ⭐️⭐️⭐️⭐️⭐️
+# Звёздный рейтинг ⭐️⭐️⭐️⭐️⭐️
 
 - [Подробнее в видео](https://youtu.be/EbajTYI-gg8)
 - [Демо: простой](https://pepelsbey.github.io/playground/16/plain.html)
