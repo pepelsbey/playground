@@ -4,6 +4,7 @@
 
 ## Демки
 
+- [Декларативный Shadow DOM для изоляции стилей](38)
 - [Хороший и плохой focus, полифил focus-visible и Open Prioritization](31)
 - [Автотесты и деплой на GitHub Actions: npm-скрипты, EditorConfig и настройка ssh-ключа](28)
 - [Свежий взгляд на Gulp: функции и ES-модули](25)

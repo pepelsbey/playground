@@ -1,0 +1,15 @@
+:host {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    padding: 15px 20px;
+    width: 256px;
+    height: 144px;
+    background-color: white;
+}
+
+h2 {
+    margin: 0;
+    color: #585a5e;
+    font-family: 'PT Sans Narrow', sans-serif;
+}

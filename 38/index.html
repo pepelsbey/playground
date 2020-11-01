@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Shower</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <shower-deck>
+        <template shadowroot="open">
+            <link rel="stylesheet" href="shower/deck.css">
+            <shower-slide>
+                <template shadowroot="open">
+                    <link rel="stylesheet" href="shower/slide.css">
+                    <h2>Slide One</h2>
+                </template>
+            </shower-slide>
+            <shower-slide>
+                <template shadowroot="open">
+                    <link rel="stylesheet" href="shower/slide.css">
+                    <h2>Slide Two</h2>
+                    <style>
+                        h2 {
+                            color: tomato;
+                        }
+                    </style>
+                </template>
+            </shower-slide>
+            <shower-slide>
+                <template shadowroot="open">
+                    <link rel="stylesheet" href="shower/slide.css">
+                    <h2>Slide Three</h2>
+                    <style>
+                        h2 {
+                            color: limegreen;
+                        }
+                    </style>
+                </template>
+            </shower-slide>
+        </template>
+    </shower-deck>
+</body>
+</html>

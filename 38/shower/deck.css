@@ -1,0 +1,9 @@
+:host {
+    display: block;
+    box-sizing: border-box;
+    padding: 25px;
+    height: 100%;
+    overflow: hidden;
+    background-color: #585a5e;
+    font-family: 'PT Sans', sans-serif;
+}
