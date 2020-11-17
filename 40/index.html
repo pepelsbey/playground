@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Кнопки</title>
+    <style>
+        @font-face {
+            font-family: 'Journal Sans New';
+            font-weight: bold;
+            src: url('fonts/journal-sans-new-bold.woff2') format('woff2');
+        }
+
+        body {
+            margin: 0;
+            padding: 50px;
+            font-family: 'Journal Sans New', sans-serif;
+        }
+
+        .button {
+            display: inline-grid;
+            grid-auto-flow: column;
+            column-gap: 0.4em;
+            align-items: center;
+            padding: 0.45em 0.7em 0.5em;
+            border: none;
+            border-radius: 2em;
+            background-color: grey;
+            color: white;
+            line-height: 1;
+            text-decoration: none;
+            font-size: 50px;
+            font-family: inherit;
+        }
+
+        .button--remove {
+            background-color: #ff6347;
+        }
+
+        .button--add {
+            background-color: #6fba1e;
+        }
+
+        .button--think {
+            background-color: #006ae3;
+        }
+
+        .button__icon {
+            width: 0.8em;
+            height: 0.8em;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body>
+    <button class="button button--remove" type="button">
+        <svg class="button__icon" width="32" height="32" viewBox="0 0 100 100"><path d="M94.9 22.9L77.22 5.22 50 32.45 22.78 5.22 5.1 22.9l27.22 27.22L5.1 77.35l17.68 17.68L50 67.8l27.22 27.23L94.9 77.35 67.68 50.12 94.9 22.9z"/></svg>
+        Удалить
+    </button>
+    <button class="button button--add" type="button">
+        <svg class="button__icon" width="32" height="32" viewBox="0 0 100 100"><path d="M62.5 3h-25v34.5H3v25h34.5V97h25V62.5H97v-25H62.5V3z"/></svg>
+        Добавить
+    </button>
+    <a class="button button--think" href>
+        <svg class="button__icon" width="32" height="32" viewBox="0 0 100 100"><path d="M95 50a45 45 0 11-90 0 45 45 0 0190 0zM50 70a20 20 0 100-40 20 20 0 000 40z"/></svg>
+        Подумать
+    </a>
+</body>
+</html>
