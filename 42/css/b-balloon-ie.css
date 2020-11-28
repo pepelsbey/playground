@@ -1,0 +1,875 @@
+@import url(b-balloon.css);
+
+/* Balloon Common (begin) */
+    .b-balloon-wrap
+    {
+        zoom: 1;
+    }
+
+    /* Top (begin) */
+        .b-balloon-tl i,
+        .b-balloon-tr i
+        {
+            font-size: 0;
+        }
+        
+        * html .b-balloon-tl i,
+        * html .b-balloon-t,
+        * html .b-balloon-tr i
+        {
+            background: none !important;
+        }
+
+        * html .b-balloon .b-balloon-tl i,
+        * html .b-balloon .b-balloon-t i,
+        * html .b-balloon .b-balloon-tr i
+        {
+            position: relative;
+            
+            overflow: hidden;
+
+            zoom: 1;
+        }
+
+        * html .b-balloon .b-balloon-tl i i,
+        * html .b-balloon .b-balloon-t i i,
+        * html .b-balloon .b-balloon-tr i i
+        {
+            position: absolute;
+            top: 0;
+        }
+
+        * html .b-balloon .b-balloon-tl i i
+        {
+            left: 0;
+        }
+
+        * html .b-balloon .b-balloon-t i
+        {
+            width: 100%;
+        }
+
+        * html .b-balloon .b-balloon-t i i
+        {
+            left: 50%;
+        }
+
+        * html .b-balloon .b-balloon-tr i i
+        {
+            right: expression( parentNode.offsetWidth % 2 ? -1 : 0 );
+        }
+    /* Top (end) */
+
+    /* Middle (begin) */
+        * html .b-balloon-ml,
+        * html .b-balloon-mr
+        {
+            background: none !important;
+        }
+    /* Middle (end) */
+
+    /* Bottom (begin) */
+        * html .b-balloon-b b,
+        * html .b-balloon-b i i
+        {
+            overflow: hidden;
+
+            background: none !important;
+        }
+
+        * html .b-balloon-b i i
+        {
+            right: expression( parentNode.offsetWidth % 2 ? -1 : 0 );
+        }
+    /* Bottom (end) */
+
+    /* Tail & Shadow (begin) */
+        * html .b-balloon .b-balloon-tail,
+        * html .b-balloon .b-balloon-shad
+        {
+            right: expression( parentNode.offsetWidth % 2 ? -1 : 0 );
+
+            overflow: hidden;
+
+            background: none !important;
+        }
+    /* Tail & Shadow (end) */
+/* Balloon Common (end) */
+
+/* Balloon Full (begin) */
+    .b-balloon-full
+    {
+        bottom: 37px;
+        right: -45px;
+    }
+
+    /* Top (begin) */
+        * html .b-balloon-full .b-balloon-tl i i,
+        * html .b-balloon-full .b-balloon-t i i,
+        * html .b-balloon-full .b-balloon-tr i i
+        {
+            width: 800px;
+            height: 9px;
+
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/full/t.png', sizingMethod='crop');
+        }
+
+        * html .b-balloon-full .b-balloon-t i
+        {
+            height: 9px;
+        }
+
+        * html .b-balloon-full .b-balloon-t i i
+        {
+            margin-left: -400px;
+        }
+    /* Top (end) */
+
+    /* Middle (begin) */
+        * html .b-balloon-full .b-balloon-ml
+        {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/full/m-left.png', sizingMethod='crop');
+        }
+
+        * html .b-balloon-full .b-balloon-mr
+        {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/full/m-right.png', sizingMethod='crop');
+        }
+    /* Middle (end) */
+
+    /* Bottom (begin) */
+        .b-balloon-full .b-balloon-b b
+        {
+            margin-left: -19px;
+        }
+
+        * html .b-balloon-full .b-balloon-b b,
+        * html .b-balloon-full .b-balloon-b i i
+        {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/full/b.png', sizingMethod='crop');
+        }
+    /* Bottom (end) */
+
+    /* Tail & Shadow (begin) */
+        * html .b-balloon-full .b-balloon-tail
+        {
+            bottom: expression( parentNode.offsetHeight % 2 ? -38 : -37 );
+
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/full/tail.png', sizingMethod='crop');
+        }
+
+        * html .b-balloon-full .b-balloon-shad
+        {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/full/shad.png', sizingMethod='crop');
+        }
+    /* Tail & Shadow (end) */
+
+    /* Close (begin) */
+        * html .b-balloon-close
+        {
+            cursor: hand;
+        }
+    /* Close (end) */
+/* Balloon Full (end) */
+
+/* Balloon Small (begin) */
+    .b-balloon-small
+    {
+        bottom: 12px;
+        right: -18px;
+    }
+
+    /* Top (begin) */
+        * html .b-balloon-small .b-balloon-tl i i,
+        * html .b-balloon-small .b-balloon-t i i,
+        * html .b-balloon-small .b-balloon-tr i i
+        {
+            width: 800px;
+        }
+
+        * html .b-balloon-small .b-balloon-t i
+        {
+            height: 5px;
+        }
+
+        * html .b-balloon-small .b-balloon-t i i
+        {
+            margin-left: -400px;
+        }
+    /* Top (end) */
+
+    /* Middle (begin) */
+        .b-balloon-small .b-balloon-content
+        {
+            zoom: 1;
+        }
+    /* Middle (end) */
+    
+    /* Bottom (begin) */
+        .b-balloon-small .b-balloon-b b
+        {
+            margin-left: -7px;
+        }
+    /* Bottom (end) */
+
+    /* Tail & Shadow (begin) */
+        * html .b-balloon-small .b-balloon-tail
+        {
+            bottom: expression( parentNode.offsetHeight % 2 ? -13 : -12 );
+        }
+
+        * html .b-balloon-small .b-balloon-shad
+        {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/shad.png', sizingMethod='crop');
+        }
+    /* Tail & Shadow (end) */
+/* Balloon Small (end) */
+
+/* Balloon Small Colors (begin) */
+    /* Blue (begin) */
+        /* Top (begin) */
+            * html .b-balloon-blue .b-balloon-tl i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-blue .b-balloon-t i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-blue .b-balloon-tr i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue/t.png', sizingMethod='crop');
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            * html .b-balloon-blue .b-balloon-ml
+            {            
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue/m-left.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-blue .b-balloon-mr
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue/m-right.png', sizingMethod='crop');
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            * html .b-balloon-blue .b-balloon-b b,
+            * html .b-balloon-blue .b-balloon-b i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue/b.png', sizingMethod='crop');
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            * html .b-balloon-blue .b-balloon-tail
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue/tail.png', sizingMethod='crop');
+            }
+        /* Tail (end) */
+    /* Blue (end) */
+
+    /* Blue Dark (begin) */
+        /* Top (begin) */
+            * html .b-balloon-blue-d .b-balloon-tl i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-d/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-blue-d .b-balloon-t i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-d/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-blue-d .b-balloon-tr i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-d/t.png', sizingMethod='crop');
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            * html .b-balloon-blue-d .b-balloon-ml
+            {            
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-d/m-left.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-blue-d .b-balloon-mr
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-d/m-right.png', sizingMethod='crop');
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            * html .b-balloon-blue-d .b-balloon-b b,
+            * html .b-balloon-blue-d .b-balloon-b i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-d/b.png', sizingMethod='crop');
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            * html .b-balloon-blue-d .b-balloon-tail
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-d/tail.png', sizingMethod='crop');
+            }
+        /* Tail (end) */
+    /* Blue Dark (end) */
+
+    /* Blue Light (begin) */
+        /* Top (begin) */
+            * html .b-balloon-blue-l .b-balloon-tl i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-l/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-blue-l .b-balloon-t i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-l/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-blue-l .b-balloon-tr i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-l/t.png', sizingMethod='crop');
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            * html .b-balloon-blue-l .b-balloon-ml
+            {            
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-l/m-left.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-blue-l .b-balloon-mr
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-l/m-right.png', sizingMethod='crop');
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            * html .b-balloon-blue-l .b-balloon-b b,
+            * html .b-balloon-blue-l .b-balloon-b i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-l/b.png', sizingMethod='crop');
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            * html .b-balloon-blue-l .b-balloon-tail
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/blue-l/tail.png', sizingMethod='crop');
+            }
+        /* Tail (end) */
+    /* Blue Light (end) */
+
+    /* Green (begin) */
+        /* Top (begin) */
+            * html .b-balloon-green .b-balloon-tl i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/green/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-green .b-balloon-t i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/green/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-green .b-balloon-tr i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/green/t.png', sizingMethod='crop');
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            * html .b-balloon-green .b-balloon-ml
+            {            
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/green/m-left.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-green .b-balloon-mr
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/green/m-right.png', sizingMethod='crop');
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            * html .b-balloon-green .b-balloon-b b,
+            * html .b-balloon-green .b-balloon-b i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/green/b.png', sizingMethod='crop');
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            * html .b-balloon-green .b-balloon-tail
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/green/tail.png', sizingMethod='crop');
+            }
+        /* Tail (end) */
+    /* Green (end) */
+
+    /* Grey (begin) */
+        /* Top (begin) */
+            * html .b-balloon-grey .b-balloon-tl i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/grey/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-grey .b-balloon-t i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/grey/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-grey .b-balloon-tr i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/grey/t.png', sizingMethod='crop');
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            * html .b-balloon-grey .b-balloon-ml
+            {            
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/grey/m-left.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-grey .b-balloon-mr
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/grey/m-right.png', sizingMethod='crop');
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            * html .b-balloon-grey .b-balloon-b b,
+            * html .b-balloon-grey .b-balloon-b i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/grey/b.png', sizingMethod='crop');
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            * html .b-balloon-grey .b-balloon-tail
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/grey/tail.png', sizingMethod='crop');
+            }
+        /* Tail (end) */
+    /* Grey (end) */
+
+    /* Night (begin) */
+        /* Top (begin) */
+            * html .b-balloon-night .b-balloon-tl i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/night/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-night .b-balloon-t i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/night/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-night .b-balloon-tr i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/night/t.png', sizingMethod='crop');
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            * html .b-balloon-night .b-balloon-ml
+            {            
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/night/m-left.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-night .b-balloon-mr
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/night/m-right.png', sizingMethod='crop');
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            * html .b-balloon-night .b-balloon-b b,
+            * html .b-balloon-night .b-balloon-b i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/night/b.png', sizingMethod='crop');
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            * html .b-balloon-night .b-balloon-tail
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/night/tail.png', sizingMethod='crop');
+            }
+        /* Tail (end) */
+    /* Night (end) */
+
+    /* Orange (begin) */
+        /* Top (begin) */
+            * html .b-balloon-orange .b-balloon-tl i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-orange .b-balloon-t i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-orange .b-balloon-tr i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange/t.png', sizingMethod='crop');
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            * html .b-balloon-orange .b-balloon-ml
+            {            
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange/m-left.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-orange .b-balloon-mr
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange/m-right.png', sizingMethod='crop');
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            * html .b-balloon-orange .b-balloon-b b,
+            * html .b-balloon-orange .b-balloon-b i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange/b.png', sizingMethod='crop');
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            * html .b-balloon-orange .b-balloon-tail
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange/tail.png', sizingMethod='crop');
+            }
+        /* Tail (end) */
+    /* Orange (end) */
+
+    /* Orange Dark (begin) */
+        /* Top (begin) */
+            * html .b-balloon-orange-d .b-balloon-tl i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange-d/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-orange-d .b-balloon-t i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange-d/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-orange-d .b-balloon-tr i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange-d/t.png', sizingMethod='crop');
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            * html .b-balloon-orange-d .b-balloon-ml
+            {            
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange-d/m-left.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-orange-d .b-balloon-mr
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange-d/m-right.png', sizingMethod='crop');
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            * html .b-balloon-orange-d .b-balloon-b b,
+            * html .b-balloon-orange-d .b-balloon-b i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange-d/b.png', sizingMethod='crop');
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            * html .b-balloon-orange-d .b-balloon-tail
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/orange-d/tail.png', sizingMethod='crop');
+            }
+        /* Tail (end) */
+    /* Orange Dark (end) */
+
+    /* Pink (begin) */
+        /* Top (begin) */
+            * html .b-balloon-pink .b-balloon-tl i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/pink/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-pink .b-balloon-t i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/pink/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-pink .b-balloon-tr i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/pink/t.png', sizingMethod='crop');
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            * html .b-balloon-pink .b-balloon-ml
+            {            
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/pink/m-left.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-pink .b-balloon-mr
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/pink/m-right.png', sizingMethod='crop');
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            * html .b-balloon-pink .b-balloon-b b,
+            * html .b-balloon-pink .b-balloon-b i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/pink/b.png', sizingMethod='crop');
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            * html .b-balloon-pink .b-balloon-tail
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/pink/tail.png', sizingMethod='crop');
+            }
+        /* Tail (end) */
+    /* Pink (end) */
+
+    /* Red (begin) */
+        /* Top (begin) */
+            * html .b-balloon-red .b-balloon-tl i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/red/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-red .b-balloon-t i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/red/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-red .b-balloon-tr i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/red/t.png', sizingMethod='crop');
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            * html .b-balloon-red .b-balloon-ml
+            {            
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/red/m-left.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-red .b-balloon-mr
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/red/m-right.png', sizingMethod='crop');
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            * html .b-balloon-red .b-balloon-b b,
+            * html .b-balloon-red .b-balloon-b i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/red/b.png', sizingMethod='crop');
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            * html .b-balloon-red .b-balloon-tail
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/red/tail.png', sizingMethod='crop');
+            }
+        /* Tail (end) */
+    /* Red (end) */
+
+    /* Violet (begin) */
+        /* Top (begin) */
+            * html .b-balloon-violet .b-balloon-tl i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/violet/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-violet .b-balloon-t i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/violet/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-violet .b-balloon-tr i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/violet/t.png', sizingMethod='crop');
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            * html .b-balloon-violet .b-balloon-ml
+            {            
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/violet/m-left.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-violet .b-balloon-mr
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/violet/m-right.png', sizingMethod='crop');
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            * html .b-balloon-violet .b-balloon-b b,
+            * html .b-balloon-violet .b-balloon-b i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/violet/b.png', sizingMethod='crop');
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            * html .b-balloon-violet .b-balloon-tail
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/violet/tail.png', sizingMethod='crop');
+            }
+        /* Tail (end) */
+    /* Violet (end) */
+
+    /* White (begin) */
+        /* Top (begin) */
+            * html .b-balloon-white .b-balloon-tl i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/white/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-white .b-balloon-t i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/white/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-white .b-balloon-tr i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/white/t.png', sizingMethod='crop');
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            * html .b-balloon-white .b-balloon-ml
+            {            
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/white/m-left.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-white .b-balloon-mr
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/white/m-right.png', sizingMethod='crop');
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            * html .b-balloon-white .b-balloon-b b,
+            * html .b-balloon-white .b-balloon-b i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/white/b.png', sizingMethod='crop');
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            * html .b-balloon-white .b-balloon-tail
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/white/tail.png', sizingMethod='crop');
+            }
+        /* Tail (end) */
+    /* White (end) */
+
+    /* Yellow (begin) */
+        /* Top (begin) */
+            * html .b-balloon-yellow .b-balloon-tl i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/yellow/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-yellow .b-balloon-t i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/yellow/t.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-yellow .b-balloon-tr i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/yellow/t.png', sizingMethod='crop');
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            * html .b-balloon-yellow .b-balloon-ml
+            {            
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/yellow/m-left.png', sizingMethod='crop');
+            }
+
+            * html .b-balloon-yellow .b-balloon-mr
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/yellow/m-right.png', sizingMethod='crop');
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            * html .b-balloon-yellow .b-balloon-b b,
+            * html .b-balloon-yellow .b-balloon-b i i
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/yellow/b.png', sizingMethod='crop');
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            * html .b-balloon-yellow .b-balloon-tail
+            {
+                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/small/yellow/tail.png', sizingMethod='crop');
+            }
+        /* Tail (end) */
+    /* Yellow (end) */
+/* Balloon Small Colors (end) */
+
+/* Balloon Hint (begin) */
+    /* Top (begin) */
+        * html .b-balloon-hint .b-balloon-tl i i,
+        * html .b-balloon-hint .b-balloon-t i i,
+        * html .b-balloon-hint .b-balloon-tr i i
+        {
+            width: 800px;
+            height: 5px;
+
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/hint/t.png', sizingMethod='crop');
+        }
+
+        * html .b-balloon-hint .b-balloon-t i
+        {
+            height: 5px;
+        }
+
+        * html .b-balloon-hint .b-balloon-t i i
+        {
+            margin-left: -400px;
+        }
+    /* Top (end) */
+
+    /* Middle (end) */
+        * html .b-balloon-hint .b-balloon-ml
+        {            
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/hint/m-left.png', sizingMethod='crop');
+        }
+
+        * html .b-balloon-hint .b-balloon-mr
+        {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/hint/m-right.png', sizingMethod='crop');
+        }
+    /* Middle (end) */
+
+    /* Bottom (begin) */
+        .b-balloon-hint .b-balloon-b b
+        {
+            margin-left: -7px;
+        }
+
+        * html .b-balloon-hint .b-balloon-b b,
+        * html .b-balloon-hint .b-balloon-b i i
+        {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='i/hint/b.png', sizingMethod='crop');
+        }
+    /* Bottom (end) */
+/* Balloon Hint (end) */

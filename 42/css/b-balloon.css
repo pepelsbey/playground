@@ -1,0 +1,1073 @@
+/* Balloon Common (begin) */
+    .b-balloon-point
+    {
+        position: absolute;
+
+        width: 1px;
+        height: 1px;
+    }
+
+    .b-balloon
+    {
+        position: absolute;
+        z-index: 20;
+    }
+
+    .b-balloon-wrap
+    {
+        position: relative;
+    }
+    
+    /* Frame (begin) */
+        .b-balloon-frame
+        {
+            border-collapse: collapse;
+        }
+
+        .b-balloon-tl,
+        .b-balloon-t,
+        .b-balloon-tr,
+        .b-balloon-ml,
+        .b-balloon-m,
+        .b-balloon-mr,
+        .b-balloon-b
+        {
+            padding: 0;
+        }
+    /* Frame (end) */
+
+    /* Top (begin) */
+        .b-balloon-tl i,
+        .b-balloon-tr i
+        {
+            display: block;
+        }
+    /* Top (end) */
+
+    /* Bottom (begin) */
+        .b-balloon-b
+        {
+            overflow: hidden;
+        }
+
+        .b-balloon-b i
+        {
+            display: block;
+        }
+
+        .b-balloon-b b
+        {
+            position: absolute;
+        }
+
+        .b-balloon-b i
+        {
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        .b-balloon-b i i
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    /* Bottom (end) */
+
+    /* Tail & Shadow (begin) */
+        .b-balloon-tail,
+        .b-balloon-shad
+        {
+            position: absolute;
+
+            display: block;
+            
+            background: #c00;
+        }
+    /* Tail & Shadow (end) */
+/* Balloon Common (end) */
+
+/* Balloon Full (begin) */
+    .b-balloon-full
+    {
+        bottom: 38px;
+        right: -44px;
+
+        cursor: default;
+    }
+
+    .b-balloon-full .b-balloon-wrap
+    {
+        padding-right: 21px;
+        margin-right: -21px;
+    }
+
+    /* Top (begin) */
+        .b-balloon-full .b-balloon-tl i
+        {
+            width: 8px;
+            height: 9px;
+
+            background: url(../i/full/t.png) no-repeat;
+        }
+
+        .b-balloon-full .b-balloon-t
+        {
+            background: url(../i/full/t.png) no-repeat 50% 0;
+        }
+
+        .b-balloon-full .b-balloon-tr i
+        {
+            width: 8px;
+            height: 9px;
+
+            background: url(../i/full/t.png) no-repeat 100% 0;
+        }
+    /* Top (end) */
+
+    /* Middle (end) */
+        .b-balloon-full .b-balloon-ml
+        {            
+            background: url(../i/full/m.png) repeat-y;
+        }
+
+        .b-balloon-full .b-balloon-m
+        {
+            background: #fff;
+        }
+
+        .b-balloon-full .b-balloon-mr
+        {
+            background: url(../i/full/m.png) repeat-y 100% 0;
+        }
+    /* Middle (end) */
+
+    /* Bottom (begin) */
+        .b-balloon-full .b-balloon-b-left
+        {
+            background: url(../i/full/b-left.png) no-repeat;
+        }
+
+        .b-balloon-full .b-balloon-b b
+        {
+            width: 19px;
+            height: 23px;
+
+            background: url(../i/full/b.png) no-repeat;
+        }
+
+        .b-balloon-full .b-balloon-b i
+        {
+            height: 23px;
+            margin-right: -19px;
+            margin-left: 19px;
+        }
+
+        .b-balloon-full .b-balloon-b i i
+        {
+            width: 819px;
+            margin: 0;
+
+            background: url(../i/full/b.png) no-repeat;
+        }
+    /* Bottom (end) */
+
+    /* Close (begin) */
+        .b-balloon-close
+        {
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            
+            display: none;
+            overflow: hidden;
+            
+            width: 13px;
+            height: 13px;
+            
+            cursor: pointer;
+            
+            background: url(../i/full/close.gif) no-repeat;
+        }
+        
+        .b-balloon-close-on .b-balloon-close
+        {
+            display: block;
+        }
+
+        .b-balloon-close-on .b-balloon-content
+        {
+            padding-right: 20px;
+        }
+    /* Close (end) */
+
+    /* Tail & Shadow (begin) */
+        .b-balloon-full .b-balloon-tail
+        {
+            bottom: -37px;
+            right: 0;
+            
+            width: 50px;
+            height: 37px;
+            
+            background: url(../i/full/tail.png) no-repeat;
+        }
+
+        .b-balloon-full .b-balloon-shad
+        {
+            bottom: 0;
+            right: 0;
+            
+            width: 21px;
+            height: 98px;
+            
+            background: url(../i/full/shad.png) no-repeat;
+        }
+    /* Tail & Shadow (end) */
+/* Balloon Full (end) */
+
+/* Balloon Small (begin) */
+    .b-balloon-small
+    {
+        bottom: 13px;
+        right: -17px;
+
+        cursor: pointer;
+    }
+
+    .b-balloon-small .b-balloon-wrap
+    {
+        padding-right: 5px;
+        margin-right: -5px;
+        margin-left: 5px;
+    }
+
+    /* Top (begin) */
+        .b-balloon-small .b-balloon-tl i
+        {
+            width: 5px;
+            height: 5px;
+        }
+
+        .b-balloon-small .b-balloon-tr i
+        {
+            width: 5px;
+            height: 5px;
+        }
+    /* Top (end) */
+
+    /* Middle (end) */
+        .b-balloon-small .b-balloon-m
+        {
+            vertical-align: bottom;
+            
+            background: #fff;
+        }
+
+        .b-balloon-small .b-balloon-content
+        {
+            position: relative;
+            z-index: 10;
+
+            margin: 0 -4px;
+            padding: 0 4px;
+            
+            white-space: nowrap;
+            text-align: center;
+            line-height: 1;
+        }
+    /* Middle (end) */
+
+    /* Bottom (begin) */
+        .b-balloon-small .b-balloon-b b
+        {
+            width: 7px;
+            height: 11px;
+        }
+
+        .b-balloon-small .b-balloon-b i
+        {
+            height: 11px;
+            margin-right: -7px;
+            margin-left: 7px;
+        }
+
+        .b-balloon-small .b-balloon-b i i
+        {
+            width: 807px;
+            margin: 0;
+        }
+    /* Bottom (end) */
+
+    /* Tail & Shadow (begin) */
+        .b-balloon-small .b-balloon-tail
+        {
+            bottom: -12px;
+            right: 0;
+            
+            width: 21px;
+            height: 12px;
+        }
+
+        .b-balloon-small .b-balloon-shad
+        {
+            bottom: 0;
+            right: 0;
+            
+            width: 5px;
+            height: 10px;
+
+            background: url(../i/small/shad.png) no-repeat;
+        }
+    /* Tail & Shadow (end) */
+/* Balloon Small (end) */
+
+/* Balloon Small Colors (begin) */
+    /* Blue (begin) */
+        /* Top (begin) */
+            .b-balloon-blue .b-balloon-tl i
+            {
+                background: url(../i/small/blue/t.png) no-repeat;
+            }
+
+            .b-balloon-blue .b-balloon-t
+            {
+                background: url(../i/small/blue/t.png) no-repeat 50% 0;
+            }
+
+            .b-balloon-blue .b-balloon-tr i
+            {
+                background: url(../i/small/blue/t.png) no-repeat 100% 0;
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            .b-balloon-blue .b-balloon-ml
+            {            
+                background: url(../i/small/blue/m.png) repeat-y;
+            }
+
+            .b-balloon-blue .b-balloon-content
+            {
+                background: url(../i/small/blue/bg.png) repeat-x 0 100%;
+            }
+
+            .b-balloon-blue .b-balloon-mr
+            {
+                background: url(../i/small/blue/m.png) repeat-y 100% 0;
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            .b-balloon-blue .b-balloon-b b,
+            .b-balloon-blue .b-balloon-b i i
+            {
+                background: url(../i/small/blue/b.png) no-repeat;
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            .b-balloon-blue .b-balloon-tail
+            {
+                background: url(../i/small/blue/tail.png) no-repeat;
+            }
+        /* Tail (end) */
+    /* Blue (end) */
+
+    /* Blue Dark (begin) */
+        /* Top (begin) */
+            .b-balloon-blue-d .b-balloon-tl i
+            {
+                background: url(../i/small/blue-d/t.png) no-repeat;
+            }
+
+            .b-balloon-blue-d .b-balloon-t
+            {
+                background: url(../i/small/blue-d/t.png) no-repeat 50% 0;
+            }
+
+            .b-balloon-blue-d .b-balloon-tr i
+            {
+                background: url(../i/small/blue-d/t.png) no-repeat 100% 0;
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            .b-balloon-blue-d .b-balloon-ml
+            {            
+                background: url(../i/small/blue-d/m.png) repeat-y;
+            }
+
+            .b-balloon-blue-d .b-balloon-content
+            {
+                background: url(../i/small/blue-d/bg.png) repeat-x 0 100%;
+            }
+
+            .b-balloon-blue-d .b-balloon-mr
+            {
+                background: url(../i/small/blue-d/m.png) repeat-y 100% 0;
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            .b-balloon-blue-d .b-balloon-b b,
+            .b-balloon-blue-d .b-balloon-b i i
+            {
+                background: url(../i/small/blue-d/b.png) no-repeat;
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            .b-balloon-blue-d .b-balloon-tail
+            {
+                background: url(../i/small/blue-d/tail.png) no-repeat;
+            }
+        /* Tail (end) */
+    /* Blue Dark (end) */
+
+    /* Blue Light (begin) */
+        /* Top (begin) */
+            .b-balloon-blue-l .b-balloon-tl i
+            {
+                background: url(../i/small/blue-l/t.png) no-repeat;
+            }
+
+            .b-balloon-blue-l .b-balloon-t
+            {
+                background: url(../i/small/blue-l/t.png) no-repeat 50% 0;
+            }
+
+            .b-balloon-blue-l .b-balloon-tr i
+            {
+                background: url(../i/small/blue-l/t.png) no-repeat 100% 0;
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            .b-balloon-blue-l .b-balloon-ml
+            {            
+                background: url(../i/small/blue-l/m.png) repeat-y;
+            }
+
+            .b-balloon-blue-l .b-balloon-content
+            {
+                background: url(../i/small/blue-l/bg.png) repeat-x 0 100%;
+            }
+
+            .b-balloon-blue-l .b-balloon-mr
+            {
+                background: url(../i/small/blue-l/m.png) repeat-y 100% 0;
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            .b-balloon-blue-l .b-balloon-b b,
+            .b-balloon-blue-l .b-balloon-b i i
+            {
+                background: url(../i/small/blue-l/b.png) no-repeat;
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            .b-balloon-blue-l .b-balloon-tail
+            {
+                background: url(../i/small/blue-l/tail.png) no-repeat;
+            }
+        /* Tail (end) */
+    /* Blue Light (end) */
+
+    /* Green (begin) */
+        /* Top (begin) */
+            .b-balloon-green .b-balloon-tl i
+            {
+                background: url(../i/small/green/t.png) no-repeat;
+            }
+
+            .b-balloon-green .b-balloon-t
+            {
+                background: url(../i/small/green/t.png) no-repeat 50% 0;
+            }
+
+            .b-balloon-green .b-balloon-tr i
+            {
+                background: url(../i/small/green/t.png) no-repeat 100% 0;
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            .b-balloon-green .b-balloon-ml
+            {            
+                background: url(../i/small/green/m.png) repeat-y;
+            }
+
+            .b-balloon-green .b-balloon-content
+            {
+                background: url(../i/small/green/bg.png) repeat-x 0 100%;
+            }
+
+            .b-balloon-green .b-balloon-mr
+            {
+                background: url(../i/small/green/m.png) repeat-y 100% 0;
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            .b-balloon-green .b-balloon-b b,
+            .b-balloon-green .b-balloon-b i i
+            {
+                background: url(../i/small/green/b.png) no-repeat;
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            .b-balloon-green .b-balloon-tail
+            {
+                background: url(../i/small/green/tail.png) no-repeat;
+            }
+        /* Tail (end) */
+    /* Green (end) */
+
+    /* Grey (begin) */
+        /* Top (begin) */
+            .b-balloon-grey .b-balloon-tl i
+            {
+                background: url(../i/small/grey/t.png) no-repeat;
+            }
+
+            .b-balloon-grey .b-balloon-t
+            {
+                background: url(../i/small/grey/t.png) no-repeat 50% 0;
+            }
+
+            .b-balloon-grey .b-balloon-tr i
+            {
+                background: url(../i/small/grey/t.png) no-repeat 100% 0;
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            .b-balloon-grey .b-balloon-ml
+            {            
+                background: url(../i/small/grey/m.png) repeat-y;
+            }
+
+            .b-balloon-grey .b-balloon-content
+            {
+                background: url(../i/small/grey/bg.png) repeat-x 0 100%;
+            }
+
+            .b-balloon-grey .b-balloon-mr
+            {
+                background: url(../i/small/grey/m.png) repeat-y 100% 0;
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            .b-balloon-grey .b-balloon-b b,
+            .b-balloon-grey .b-balloon-b i i
+            {
+                background: url(../i/small/grey/b.png) no-repeat;
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            .b-balloon-grey .b-balloon-tail
+            {
+                background: url(../i/small/grey/tail.png) no-repeat;
+            }
+        /* Tail (end) */
+    /* Grey (end) */
+
+    /* Night (begin) */
+        /* Top (begin) */
+            .b-balloon-night .b-balloon-tl i
+            {
+                background: url(../i/small/night/t.png) no-repeat;
+            }
+
+            .b-balloon-night .b-balloon-t
+            {
+                background: url(../i/small/night/t.png) no-repeat 50% 0;
+            }
+
+            .b-balloon-night .b-balloon-tr i
+            {
+                background: url(../i/small/night/t.png) no-repeat 100% 0;
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            .b-balloon-night .b-balloon-ml
+            {            
+                background: url(../i/small/night/m.png) repeat-y;
+            }
+
+            .b-balloon-night .b-balloon-m
+            {
+                background: #4068f9;
+                color: #fff;
+            }
+
+            .b-balloon-night .b-balloon-content
+            {
+                background: url(../i/small/night/bg.png) repeat-x 0 100%;
+            }
+
+            .b-balloon-night .b-balloon-mr
+            {
+                background: url(../i/small/night/m.png) repeat-y 100% 0;
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            .b-balloon-night .b-balloon-b b,
+            .b-balloon-night .b-balloon-b i i
+            {
+                background: url(../i/small/night/b.png) no-repeat;
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            .b-balloon-night .b-balloon-tail
+            {
+                background: url(../i/small/night/tail.png) no-repeat;
+            }
+        /* Tail (end) */
+    /* Night (end) */
+
+    /* Orange (begin) */
+        /* Top (begin) */
+            .b-balloon-orange .b-balloon-tl i
+            {
+                background: url(../i/small/orange/t.png) no-repeat;
+            }
+
+            .b-balloon-orange .b-balloon-t
+            {
+                background: url(../i/small/orange/t.png) no-repeat 50% 0;
+            }
+
+            .b-balloon-orange .b-balloon-tr i
+            {
+                background: url(../i/small/orange/t.png) no-repeat 100% 0;
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            .b-balloon-orange .b-balloon-ml
+            {            
+                background: url(../i/small/orange/m.png) repeat-y;
+            }
+
+            .b-balloon-orange .b-balloon-content
+            {
+                background: url(../i/small/orange/bg.png) repeat-x 0 100%;
+            }
+
+            .b-balloon-orange .b-balloon-mr
+            {
+                background: url(../i/small/orange/m.png) repeat-y 100% 0;
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            .b-balloon-orange .b-balloon-b b,
+            .b-balloon-orange .b-balloon-b i i
+            {
+                background: url(../i/small/orange/b.png) no-repeat;
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            .b-balloon-orange .b-balloon-tail
+            {
+                background: url(../i/small/orange/tail.png) no-repeat;
+            }
+        /* Tail (end) */
+    /* Orange (end) */
+
+    /* Orange Dark (begin) */
+        /* Top (begin) */
+            .b-balloon-orange-d .b-balloon-tl i
+            {
+                background: url(../i/small/orange-d/t.png) no-repeat;
+            }
+
+            .b-balloon-orange-d .b-balloon-t
+            {
+                background: url(../i/small/orange-d/t.png) no-repeat 50% 0;
+            }
+
+            .b-balloon-orange-d .b-balloon-tr i
+            {
+                background: url(../i/small/orange-d/t.png) no-repeat 100% 0;
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            .b-balloon-orange-d .b-balloon-ml
+            {            
+                background: url(../i/small/orange-d/m.png) repeat-y;
+            }
+
+            .b-balloon-orange-d .b-balloon-content
+            {
+                background: url(../i/small/orange-d/bg.png) repeat-x 0 100%;
+            }
+
+            .b-balloon-orange-d .b-balloon-mr
+            {
+                background: url(../i/small/orange-d/m.png) repeat-y 100% 0;
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            .b-balloon-orange-d .b-balloon-b b,
+            .b-balloon-orange-d .b-balloon-b i i
+            {
+                background: url(../i/small/orange-d/b.png) no-repeat;
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            .b-balloon-orange-d .b-balloon-tail
+            {
+                background: url(../i/small/orange-d/tail.png) no-repeat;
+            }
+        /* Tail (end) */
+    /* Orange Dark (end) */
+
+    /* Pink (begin) */
+        /* Top (begin) */
+            .b-balloon-pink .b-balloon-tl i
+            {
+                background: url(../i/small/pink/t.png) no-repeat;
+            }
+
+            .b-balloon-pink .b-balloon-t
+            {
+                background: url(../i/small/pink/t.png) no-repeat 50% 0;
+            }
+
+            .b-balloon-pink .b-balloon-tr i
+            {
+                background: url(../i/small/pink/t.png) no-repeat 100% 0;
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            .b-balloon-pink .b-balloon-ml
+            {            
+                background: url(../i/small/pink/m.png) repeat-y;
+            }
+
+            .b-balloon-pink .b-balloon-content
+            {
+                background: url(../i/small/pink/bg.png) repeat-x 0 100%;
+            }
+
+            .b-balloon-pink .b-balloon-mr
+            {
+                background: url(../i/small/pink/m.png) repeat-y 100% 0;
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            .b-balloon-pink .b-balloon-b b,
+            .b-balloon-pink .b-balloon-b i i
+            {
+                background: url(../i/small/pink/b.png) no-repeat;
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            .b-balloon-pink .b-balloon-tail
+            {
+                background: url(../i/small/pink/tail.png) no-repeat;
+            }
+        /* Tail (end) */
+    /* Pink (end) */
+
+    /* Red (begin) */
+        /* Top (begin) */
+            .b-balloon-red .b-balloon-tl i
+            {
+                background: url(../i/small/red/t.png) no-repeat;
+            }
+
+            .b-balloon-red .b-balloon-t
+            {
+                background: url(../i/small/red/t.png) no-repeat 50% 0;
+            }
+
+            .b-balloon-red .b-balloon-tr i
+            {
+                background: url(../i/small/red/t.png) no-repeat 100% 0;
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            .b-balloon-red .b-balloon-ml
+            {            
+                background: url(../i/small/red/m.png) repeat-y;
+            }
+
+            .b-balloon-red .b-balloon-content
+            {
+                background: url(../i/small/red/bg.png) repeat-x 0 100%;
+            }
+
+            .b-balloon-red .b-balloon-mr
+            {
+                background: url(../i/small/red/m.png) repeat-y 100% 0;
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            .b-balloon-red .b-balloon-b b,
+            .b-balloon-red .b-balloon-b i i
+            {
+                background: url(../i/small/red/b.png) no-repeat;
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            .b-balloon-red .b-balloon-tail
+            {
+                background: url(../i/small/red/tail.png) no-repeat;
+            }
+        /* Tail (end) */
+    /* Red (end) */
+
+    /* Violet (begin) */
+        /* Top (begin) */
+            .b-balloon-violet .b-balloon-tl i
+            {
+                background: url(../i/small/violet/t.png) no-repeat;
+            }
+
+            .b-balloon-violet .b-balloon-t
+            {
+                background: url(../i/small/violet/t.png) no-repeat 50% 0;
+            }
+
+            .b-balloon-violet .b-balloon-tr i
+            {
+                background: url(../i/small/violet/t.png) no-repeat 100% 0;
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            .b-balloon-violet .b-balloon-ml
+            {            
+                background: url(../i/small/violet/m.png) repeat-y;
+            }
+
+            .b-balloon-violet .b-balloon-content
+            {
+                background: url(../i/small/violet/bg.png) repeat-x 0 100%;
+            }
+
+            .b-balloon-violet .b-balloon-mr
+            {
+                background: url(../i/small/violet/m.png) repeat-y 100% 0;
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            .b-balloon-violet .b-balloon-b b,
+            .b-balloon-violet .b-balloon-b i i
+            {
+                background: url(../i/small/violet/b.png) no-repeat;
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            .b-balloon-violet .b-balloon-tail
+            {
+                background: url(../i/small/violet/tail.png) no-repeat;
+            }
+        /* Tail (end) */
+    /* Violet (end) */
+
+    /* White (begin) */
+        /* Top (begin) */
+            .b-balloon-white .b-balloon-tl i
+            {
+                background: url(../i/small/white/t.png) no-repeat;
+            }
+
+            .b-balloon-white .b-balloon-t
+            {
+                background: url(../i/small/white/t.png) no-repeat 50% 0;
+            }
+
+            .b-balloon-white .b-balloon-tr i
+            {
+                background: url(../i/small/white/t.png) no-repeat 100% 0;
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            .b-balloon-white .b-balloon-ml
+            {            
+                background: url(../i/small/white/m.png) repeat-y;
+            }
+
+            .b-balloon-white .b-balloon-mr
+            {
+                background: url(../i/small/white/m.png) repeat-y 100% 0;
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            .b-balloon-white .b-balloon-b b,
+            .b-balloon-white .b-balloon-b i i
+            {
+                background: url(../i/small/white/b.png) no-repeat;
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            .b-balloon-white .b-balloon-tail
+            {
+                background: url(../i/small/white/tail.png) no-repeat;
+            }
+        /* Tail (end) */
+    /* White (end) */
+
+    /* Yellow (begin) */
+        /* Top (begin) */
+            .b-balloon-yellow .b-balloon-tl i
+            {
+                background: url(../i/small/yellow/t.png) no-repeat;
+            }
+
+            .b-balloon-yellow .b-balloon-t
+            {
+                background: url(../i/small/yellow/t.png) no-repeat 50% 0;
+            }
+
+            .b-balloon-yellow .b-balloon-tr i
+            {
+                background: url(../i/small/yellow/t.png) no-repeat 100% 0;
+            }
+        /* Top (end) */
+
+        /* Middle (end) */
+            .b-balloon-yellow .b-balloon-ml
+            {            
+                background: url(../i/small/yellow/m.png) repeat-y;
+            }
+
+            .b-balloon-yellow .b-balloon-content
+            {
+                background: url(../i/small/yellow/bg.png) repeat-x 0 100%;
+            }
+
+            .b-balloon-yellow .b-balloon-mr
+            {
+                background: url(../i/small/yellow/m.png) repeat-y 100% 0;
+            }
+        /* Middle (end) */
+
+        /* Bottom (begin) */
+            .b-balloon-yellow .b-balloon-b b,
+            .b-balloon-yellow .b-balloon-b i i
+            {
+                background: url(../i/small/yellow/b.png) no-repeat;
+            }
+        /* Bottom (end) */
+
+        /* Tail (begin) */
+            .b-balloon-yellow .b-balloon-tail
+            {
+                background: url(../i/small/yellow/tail.png) no-repeat;
+            }
+        /* Tail (end) */
+    /* Yellow (end) */
+/* Balloon Small Colors (end) */
+
+/* Balloon Hint (begin) */
+    .b-balloon-hint
+    {
+        position: absolute;
+    }
+
+    /* Top (begin) */
+        .b-balloon-hint .b-balloon-tl i
+        {
+            width: 5px;
+            height: 5px;
+
+            background: url(../i/hint/t.png) no-repeat;
+        }
+
+        .b-balloon-hint .b-balloon-t
+        {
+            background: url(../i/hint/t.png) no-repeat 50% 0;
+        }
+
+        .b-balloon-hint .b-balloon-tr i
+        {
+            width: 7px;
+            height: 5px;
+
+            background: url(../i/hint/t.png) no-repeat 100% 0;
+        }
+    /* Top (end) */
+
+    /* Middle (end) */
+        .b-balloon-hint .b-balloon-ml
+        {            
+            background: url(../i/hint/m.png) repeat-y;
+        }
+
+        .b-balloon-hint .b-balloon-m
+        {
+            vertical-align: bottom;
+
+            background: #fff;
+        }
+
+        .b-balloon-hint .b-balloon-mr
+        {
+            background: url(../i/hint/m.png) repeat-y 100% 0;
+        }
+
+        .b-balloon-hint .b-balloon-content
+        {
+            position: relative;
+
+            padding: 0 2px;
+        }
+    /* Middle (end) */
+
+    /* Bottom (begin) */
+        .b-balloon-hint .b-balloon-b b,
+        .b-balloon-hint .b-balloon-b i i
+        {
+            background: url(../i/hint/b.png) no-repeat;
+        }
+
+        .b-balloon-hint .b-balloon-b b
+        {
+            width: 7px;
+            height: 8px;
+        }
+
+        .b-balloon-hint .b-balloon-b i
+        {
+            height: 8px;
+            margin-right: -7px;
+            margin-left: 7px;
+        }
+
+        .b-balloon-hint .b-balloon-b i i
+        {
+            width: 807px;
+            margin: 0;
+        }
+    /* Bottom (end) */
+/* Balloon Hint (end) */
