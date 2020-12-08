@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карты</title>
+    <style>
+        /* Global */
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #4f9c2d;
+            background-image: url('images/grid.svg');
+            font-family: sans-serif;
+        }
+
+        /* Balloon */
+
+        .balloon {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+        }
+
+        .balloon__body {
+            position: absolute;
+            bottom: 52px;
+            right: -40px;
+            padding: 9px;
+            min-width: 115px;
+            min-height: 112px;
+            background-color: #ffffff;
+            border: 1px solid #5d6776;
+            border-radius: 9px;
+        }
+
+        .balloon__body::before {
+            position: absolute;
+            bottom: -52px;
+            right: 12px;
+            width: 42px;
+            height: 52px;
+            background-image: url('images/tail.svg');
+            content: '';
+        }
+
+        .balloon__body::after {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: -22px;
+            bottom: -52px;
+            left: 14px;
+            background-image: url('images/shadow.svg');
+            background-position: 0 100%;
+            background-repeat: no-repeat;
+            content: '';
+        }
+    </style>
+</head>
+<body>
+    <div class="balloon" style="top: 200px; left: 200px">
+        <div class="balloon__body">
+            oi
+        </div>
+    </div>
+    <div class="balloon" style="top: 200px; left: 500px">
+        <div class="balloon__body">
+            oioioioioioioioioioioioioioioioioioio
+        </div>
+    </div>
+    <div class="balloon" style="top: 500px; left: 500px">
+        <div class="balloon__body">
+            oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio<br>
+            oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio<br>
+            oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio<br>
+            oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio<br>
+            oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio<br>
+            oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio<br>
+            oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio<br>
+            oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio<br>
+            oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio<br>
+            oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio<br>
+            oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio<br>
+            oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio<br>
+            oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio
+        </div>
+    </div>
+</body>
+</html>
