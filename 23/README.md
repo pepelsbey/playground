@@ -77,11 +77,16 @@ ssh USER@IP
 mkdir -p ~/.ssh
 ```
 
-Вводим ключ
+Выводим и копируем локальный ключ
+
+```
+cat ~/.ssh/id_rsa.pub
+```
+
+Вставляем его на сервере
 
 ```
 nano ~/.ssh/authorized_keys
-cat ~/.ssh/id_rsa.pub | pbcopy
 ```
 
 Выставляем права
