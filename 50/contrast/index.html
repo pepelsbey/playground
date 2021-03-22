@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Контраст цветов</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            gap: 20px;
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+
+        div {
+            display: grid;
+            place-items: center;
+            width: 256px;
+            height: 256px;
+            background-color: var(--background);
+            color: color-contrast(
+                var(--background) vs
+                black, white
+            );
+        }
+
+        div:nth-child(1) {
+            --background: black;
+        }
+
+        div:nth-child(2) {
+            --background: white;
+        }
+    </style>
+</head>
+<body>
+    <div>text</div>
+    <div>text</div>
+</body>
+</html>

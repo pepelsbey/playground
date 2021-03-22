@@ -1,0 +1,11 @@
+div:nth-child(1) {
+    background-color: mix(tomato, yellowgreen, 100%);
+}
+
+div:nth-child(2) {
+    background-color: mix(tomato, yellowgreen, 50%);
+}
+
+div:nth-child(3) {
+    background-color: mix(tomato, yellowgreen, 0%);
+}

@@ -1,0 +1,18 @@
+// https://medium.com/p/e201f3b52797
+
+@function color-difference($foreground, $background) {
+    $r: (max(red($foreground), red($background))) - (min(red($foreground), red($background)));
+    $g: (max(green($foreground), green($background))) - (min(green($foreground), green($background)));
+    $b: (max(blue($foreground), blue($background))) - (min(blue($foreground), blue($background)));
+    $sum-rgb: $r + $g + $b;
+
+    @if $sum-rgb < 500 {
+        @return "false";
+    } @else {
+        @return "true";
+    }
+}
+
+$text-colors: black, white;
+
+// …

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Смешивание цветов</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            gap: 20px;
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+
+        div {
+            display: grid;
+            place-items: center;
+            width: 256px;
+            height: 256px;
+        }
+
+        div:nth-child(1) {
+            /* Safari TP */
+            background-color: color-mix(
+                tomato 100%,
+                yellowgreen
+            );
+            /* Firefox Nightly */
+            background-color: color-mix(
+                in srgb,
+                tomato 100%,
+                yellowgreen
+            );
+        }
+
+        div:nth-child(2) {
+            /* Safari TP */
+            background-color: color-mix(
+                tomato 50%,
+                yellowgreen
+            );
+            /* Firefox Nightly */
+            background-color: color-mix(
+                in srgb,
+                tomato 50%,
+                yellowgreen
+            );
+        }
+
+        div:nth-child(3) {
+            /* Safari TP */
+            background-color: color-mix(
+                tomato 0%,
+                yellowgreen
+            );
+            /* Firefox Nightly */
+            background-color: color-mix(
+                in srgb,
+                tomato 0%,
+                yellowgreen
+            );
+        }
+    </style>
+</head>
+<body>
+    <div>100/0</div>
+    <div>50/50</div>
+    <div>0/100</div>
+</body>
+</html>
