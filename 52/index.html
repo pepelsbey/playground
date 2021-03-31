@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <title>Выражения от контейнера</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Page */
+
+        .page,
+        .page__body {
+            height: 100%;
+        }
+
+        .page {
+            font-family: sans-serif;
+        }
+
+        .page__body {
+            margin: 0;
+            display: grid;
+            grid-template-rows:
+                min-content
+                1fr
+                min-content
+                min-content;
+        }
+
+        @media (min-width: 600px) {
+            .page__body {
+                grid-template-columns: 300px 1fr;
+            }
+        }
+
+        /* Header */
+
+        .header {
+            padding: 20px;
+            background-color: tomato;
+        }
+
+        @media (min-width: 600px) {
+            .header {
+                grid-column: 1 / -1;
+            }
+        }
+
+        /* Main */
+
+        .main {
+            display: grid;
+            row-gap: 20px;
+            align-content: start;
+            padding: 20px;
+            background-color: ivory;
+            contain: layout inline-size;
+        }
+
+        @media (min-width: 600px) {
+            .main {
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+        }
+
+        /* Aside */
+
+        .aside {
+            padding: 20px;
+            background-color: wheat;
+        }
+
+        @media (min-width: 600px) {
+            .aside {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+        }
+
+        /* Footer */
+
+        .footer {
+            padding: 20px;
+            background-color: plum;
+        }
+
+        @media (min-width: 600px) {
+            .footer {
+                grid-column: 1 / -1;
+            }
+        }
+
+        /* News */
+
+        .news {
+            display: grid;
+            background-color: paleturquoise;
+        }
+
+        @container (min-width: 600px) {
+            .news {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+
+        .news__title {
+            margin: 0;
+            padding: 15px;
+            padding-bottom: 0;
+            font-weight: normal;
+        }
+
+        .news__picture {
+            max-width: 100%;
+            order: -1;
+        }
+
+        @container (min-width: 600px) {
+            .news__picture {
+                grid-row: span 2;
+                align-self: stretch;
+            }
+        }
+
+        .news__lead {
+            margin: 0;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body class="page__body">
+    <header class="header">
+        Шапка
+    </header>
+    <main class="main">
+        <div class="news">
+            <h3 class="news__title">Фотограф из Исландии сжег свой дрон в жерле извергающегося вулкана Фаградальсфьядль</h3>
+            <img class="news__picture" src="picture.svg" alt="">
+            <p class="news__lead">Исландский фотограф Гардар Олаф пожертвовал своим дроном, чтобы с максимально близкого расстояния снять извержение вулкана Фаградальсфьядль, начавшееся 19 марта. Олаф опубликовал в инстаграме короткое видео, снятое возле жерла, и заявил, что расплавил свой дрон ради этих кадров.</p>
+        </div>
+        <div class="news">
+            <h3 class="news__title">Фотограф из Исландии сжег свой дрон в жерле извергающегося вулкана Фаградальсфьядль</h3>
+            <img class="news__picture" src="picture.svg" alt="">
+            <p class="news__lead">Исландский фотограф Гардар Олаф пожертвовал своим дроном, чтобы с максимально близкого расстояния снять извержение вулкана Фаградальсфьядль, начавшееся 19 марта. Олаф опубликовал в инстаграме короткое видео, снятое возле жерла, и заявил, что расплавил свой дрон ради этих кадров.</p>
+        </div>
+    </main>
+    <aside class="aside">
+        <div class="news">
+            <h3 class="news__title">Фотограф из Исландии сжег свой дрон в жерле извергающегося вулкана Фаградальсфьядль</h3>
+            <img class="news__picture" src="picture.svg" alt="">
+            <p class="news__lead">Исландский фотограф Гардар Олаф пожертвовал своим дроном, чтобы с максимально близкого расстояния снять извержение вулкана Фаградальсфьядль, начавшееся 19 марта. Олаф опубликовал в инстаграме короткое видео, снятое возле жерла, и заявил, что расплавил свой дрон ради этих кадров.</p>
+        </div>
+    </aside>
+    <footer class="footer">
+        Подвал
+    </footer>
+</body>
+</html>
