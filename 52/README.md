@@ -2,4 +2,4 @@
 
 - [Демо](https://pepelsbey.github.io/playground/52/)
 
-[Подробнее в видео](TODO)
+[Подробнее в видео](https://youtu.be/bP3ceQEXMhU)
