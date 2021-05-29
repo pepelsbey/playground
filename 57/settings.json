@@ -1,0 +1,49 @@
+{
+  "window.zoomLevel": 1,
+  "update.showReleaseNotes": false,
+
+  "workbench.tips.enabled": false,
+  "workbench.colorTheme": "GitHub Light",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.iconTheme": "vs-minimal",
+  "workbench.startupEditor": "newUntitledFile",
+
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.fontFamily": "JetBrains Mono, Consolas, monospace",
+  "editor.fontSize": 14,
+  "editor.hover.enabled": false,
+  "editor.lightbulb.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.wordSeparators": "`~!@#$%^&*()-_=+[{]}\\|;:'\",.<>/?",
+
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.profiles.osx": {
+      "Bash": {
+          "path": "/usr/local/bin/bash"
+      }
+  },
+  "terminal.integrated.defaultProfile.osx": "Bash",
+
+  "git.autofetch": true,
+  "git.autofetchPeriod": 30,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.rebaseWhenSync": true,
+
+  "extensions.ignoreRecommendations": true,
+
+  "stylelint.validate": [
+      "css"
+  ],
+
+  "githubPullRequests.defaultMergeMethod": "squash"
+}
