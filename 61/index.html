@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Цветная тема вкладки</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="plum" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="wheat" media="(prefers-color-scheme: dark)">
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body {
+            background-color: tomato;
+            font-family: sans-serif;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0.4em 0.8em;
+            border-radius: 2em;
+            border: none;
+            background-color: darkslateblue;
+            color: white;
+            font-size: 60px;
+            font-family: inherit;
+        }
+    </style>
+</head>
+<body>
+    <button>Крась!</button>
+    <script type="module">
+        import { colors } from './colors.js';
+        import { random } from './random.js';
+
+        const button = document.querySelector('button');
+        const theme = document.querySelector('meta[name=theme-color]');
+
+        button.addEventListener('click', function() {
+            theme.content = random(colors);
+        });
+    </script>
+</body>
+</html>
