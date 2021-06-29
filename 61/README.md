@@ -1,5 +1,6 @@
 # Цветные вкладки на theme-color для Safari, Vivaldi и Chrome. Бонусом ES-импорты и сервер на Node.js
 
+- [Демо с кнопкой](https://pepelsbey.github.io/playground/61/)
 - [Chrome в 2014](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android)
 - [Vivaldi в 2018](https://vivaldi.com/blog/page-color-in-vivaldi/)
 - [Safari в 2021](https://developer.apple.com/videos/play/wwdc2021/10029/)
