@@ -1,4 +1,4 @@
-# Цветные вкладки на theme-color для Safari, Vivaldi и Chrome. Бонусом ES-импорты и сервер на Node.js
+# Цветные вкладки 🌈 на theme-color для Safari, Vivaldi и Chrome. Бонусом ES-импорты и сервер на Node.js
 
 - [Демо с кнопкой](https://pepelsbey.github.io/playground/61/)
 - [Chrome в 2014](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android)
@@ -8,4 +8,4 @@
 - [Поиски цветов-исключений](https://twitter.com/mmatuzo/status/1407960783577886721)
 - [Алгоритм контрастного цвета в Chrome](https://twitter.com/quicksave2k/status/1404754729134141440)
 
-Подробнее в видео (TODO)
+[Подробнее в видео](https://youtu.be/YQM56jX4yEc)
