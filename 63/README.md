@@ -5,3 +5,5 @@
 - [Aspect-ratio на MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)
 - [Squoosh](https://squoosh.app/)
 - [Справочник и конвертер в AVIF](https://avif.io/)
+
+[Подробнее в видео](https://youtu.be/VnjrIGvoO_Y)
