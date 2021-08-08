@@ -1,0 +1,7 @@
+:root {
+    --back-color: #273a43;
+    --back-image: url('../images/dark.jpg');
+    --body-color: #fffff0;
+    --body-shadow: rgb(255 160 122 / 0.6);
+    --body-glow: rgb(255 255 255 / 0.7);
+}

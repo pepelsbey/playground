@@ -1,0 +1,29 @@
+:root {
+    color-scheme: light dark;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    place-content: center;
+    background-color: var(--back-color);
+    background-image: var(--back-image);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+div {
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 50%;
+    background-image: radial-gradient(
+        circle at 20% 20%,
+        var(--body-color) 50%,
+        var(--body-shadow)
+    );
+    box-shadow: 0 0 10vmin var(--body-glow);
+}
