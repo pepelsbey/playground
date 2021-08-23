@@ -2,7 +2,7 @@
 
 .sky {
     --sky-color: #c7cbcc;
-    --sky-image: url('../images/light.jpg');
+    --sky-image: url('/playground/color-scheme/images/light.jpg');
 }
 
 /* Body */

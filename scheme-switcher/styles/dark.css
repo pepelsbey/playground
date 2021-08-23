@@ -2,7 +2,7 @@
 
 .sky {
     --sky-color: #273a43;
-    --sky-image: url('../images/dark.jpg');
+    --sky-image: url('/playground/color-scheme/images/dark.jpg');
 }
 
 /* Body */
