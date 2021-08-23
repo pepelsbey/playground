@@ -8,4 +8,4 @@
 - [Фото светлого неба](https://unsplash.com/photos/G-6kwVnClsE)
 - [Фото тёмного неба](https://unsplash.com/photos/ZPRgmVqgPj0)
 
-Подробнее в видео: TODO
+[Подробнее в видео](https://youtu.be/Qwuyeo7iuNY)

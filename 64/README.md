@@ -13,4 +13,4 @@ git config --global core.excludesfile ~/.gitignore
 git config --global core.excludesfile %USERPROFILE%\.gitignore
 ```
 
-Подробнее в видео: TODO
+[Подробнее в видео](https://youtu.be/D97rnxDqq1I)
