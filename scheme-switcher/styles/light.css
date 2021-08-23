@@ -1,0 +1,28 @@
+/* Sky */
+
+.sky {
+    --sky-color: #c7cbcc;
+    --sky-image: url('../images/light.jpg');
+}
+
+/* Body */
+
+.body {
+    --body-color: #fff566;
+    --body-shadow: rgb(222 168 33 / 0.4);
+    --body-glow: rgb(70 130 180 / 0.4);
+}
+
+/* Switcher */
+
+.switcher__radio {
+    filter: invert(0);
+}
+
+.switcher__radio:checked {
+    filter: invert(1);
+}
+
+.switcher__status {
+    filter: invert(0);
+}

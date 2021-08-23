@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Переключатель светлой и тёмной темы</title>
+
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#c7cbcc">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#273a43">
+
+    <script>
+        if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+            document.documentElement.style.display = 'none';
+            document.head.insertAdjacentHTML(
+                'beforeend',
+                '<link rel="stylesheet" href="styles/light.css" onload="document.documentElement.style.display=\'\'">'
+            );
+        }
+    </script>
+
+    <link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="sky">
+    <div class="body"></div>
+    <fieldset class="switcher">
+        <legend class="switcher__legend">Схема</legend>
+        <input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+        <input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+        <input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+        <div class="switcher__status"></div>
+    </fieldset>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
