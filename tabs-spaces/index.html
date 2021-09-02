@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Табы и пробелы в коде</title>
+    <style>
+        body {
+            margin: 2em;
+            line-height: 1.5;
+            font-family: sans-serif;
+        }
+
+        pre {
+            padding-left: 3ch;
+            counter-reset: pre;
+            white-space: normal;
+            tab-size: 2;
+            font-family: 'JetBrains Mono', monospace;
+            transition: tab-size 0.2s;
+        }
+
+        @media (min-width: 55ch) {
+            pre {
+                tab-size: 4;
+            }
+        }
+
+        pre code {
+            display: list-item;
+            counter-increment: pre;
+            white-space: pre-wrap;
+            font-family: inherit;
+        }
+
+        pre code::marker {
+            color: darkgray;
+            content: counter(pre, decimal-leading-zero) ' ';
+        }
+    </style>
+</head>
+<body>
+    <p>Исчисление предикатов, конечно, ментально транспонирует трансцендентальный смысл жизни, ломая рамки привычных представлений. Гетерономная этика очевидна не для всех. Дедуктивный метод, как следует из вышесказанного, создает закон внешнего мира.</p>
+    <pre>
+        <code>&lt;style&gt;</code>
+        <code>	pre {</code>
+        <code>		padding-left: 3ch;</code>
+        <code>		counter-reset: pre;</code>
+        <code>		white-space: normal;</code>
+        <code>		tab-size: 2;</code>
+        <code>		transition: tab-size 0.2s;</code>
+        <code>	}</code>
+        <code></code>
+        <code>	@media (min-width: 55ch) {</code>
+        <code>		pre {</code>
+        <code>			tab-size: 4;</code>
+        <code>		}</code>
+        <code>	}</code>
+        <code>&lt;/style&gt;</code>
+    </pre>
+    <p>Гедонизм заполняет напряженный язык образов. Предмет деятельности категорически заполняет позитивизм. Предмет деятельности рефлектирует гравитационный парадокс. Заблуждение, по определению, выводит дедуктивный метод.</p>
+</body>
+</html>
