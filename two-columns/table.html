@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Две колонки в таблице</title>
+    <style>
+        /* Page */
+
+        .page {
+            font-family: sans-serif;
+        }
+
+        .page__body {
+            margin: auto;
+            width: 800px;
+            background-color: mediumpurple;
+        }
+
+        /* News */
+
+        .news--first {
+            background-color: lightgreen;
+        }
+
+        .news--second {
+            background-color: peachpuff;
+        }
+
+        /* News Title */
+
+        .news__title {
+            margin: 0;
+            padding: 15px;
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        /* News Lead */
+
+        .news__lead {
+            margin: 0;
+            padding: 15px;
+            padding-top: 0;
+            line-height: 1.4;
+        }
+
+        /* Columns */
+
+        .columns {
+            border-collapse: collapse;
+        }
+
+        .columns__item {
+            padding: 0;
+            width: 50%;
+            vertical-align: top;
+        }
+
+        .columns__item--first {
+            padding-right: 10px;
+        }
+
+        .columns__item--second {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body class="page__body">
+    <table class="columns">
+    <tr>
+        <td class="columns__item columns__item--first">
+            <article class="news news--first">
+                <h2 class="news__title">В Англии обнаружили круги на полях. Но это круги из обнимающихся щенков лабрадора!</h2>
+                <p class="news__lead">В английском городе Брэдстоун графства Девон восемь щенков лабрадора легли кругом, прижавшись друг к другу — получился большой калачик. Увы, один из щенков опоздал. Пришлось залезть прямо на братьев и сестер и спать на их спинах. Впрочем, так даже мягче и теплее!</p>
+            </article>
+        </td>
+        <td class="columns__item columns__item--second">
+            <article class="news news--second">
+                <h2 class="news__title">На Камчатке лиса украла у туристов камеру. Поэтому сейчас вы увидите прямое включение из ее пасти</h2>
+                <p class="news__lead">Наконец-то, нашлось видео, в котором операторской работе позавидует сам Эммануэль Любецки, работавший над «Выжившим», «Бердмэном» и «Гравитацией»! Не будем томить: на Камчатке лиса украла камеру у невнимательных туристов — и убежала вместе с ней куда глаза глядят. Соответственно, вид получился буквально изнутри лисы, еще и с ASMR-озвучкой в виде ее громкого пыхтения.</p>
+            </article>
+        </td>
+    </tr>
+    </table>
+</body>
+</html>
