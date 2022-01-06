@@ -15,4 +15,4 @@
 - [MDN: Column layouts](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Column_layouts)
 - [SVG Coordinate Systems and Transformations](https://www.sarasoueidan.com/blog/svg-coordinate-systems/)
 
-[Подробнее в видео](TODO)
+[Подробнее в видео](https://youtu.be/DxSjlTKvmS8)
