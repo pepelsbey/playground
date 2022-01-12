@@ -4,4 +4,4 @@
 - [Демо Патрика Броссета](https://codepen.io/captainbrosset/pen/jOGVebx)
 - [Селект в Open UI](https://open-ui.org/components/select)
 
-Подробнее в видео: TODO
+[Подробнее в видео](https://youtu.be/mG0VFWCTnZI)
