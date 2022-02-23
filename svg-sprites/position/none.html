@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SVG-фрагменты</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            display: grid;
+            place-items: center;
+            background-color: lightpink;
+        }
+
+        @media (orientation: landscape) {
+            body {
+                grid-auto-flow: column;
+            }
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-image: url('icons/settings.svg');
+        }
+
+        div:hover {
+            background-image: url('icons/favorite.svg');
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

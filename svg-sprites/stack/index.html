@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SVG-фрагменты</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            display: grid;
+            place-items: center;
+            background-color: lightpink;
+        }
+
+        @media (orientation: landscape) {
+            body {
+                grid-auto-flow: column;
+            }
+        }
+
+        img, svg, div {
+            display: block;
+            width: 200px;
+            height: 200px;
+            color: darkslateblue;
+        }
+    </style>
+</head>
+<body>
+    <img src="icons/sprite.svg#account" alt="">
+    <div style="background-image: url('icons/sprite.svg#favorite')"></div>
+    <svg>
+        <use href="icons/sprite.svg#settings"></use>
+    </svg>
+</body>
+</html>

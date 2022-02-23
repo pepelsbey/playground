@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SVG-фрагменты</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            display: grid;
+            place-items: center;
+            background-color: lightpink;
+        }
+
+        @media (orientation: landscape) {
+            body {
+                grid-auto-flow: column;
+            }
+        }
+
+        img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+
+        img:hover {
+            object-position: 50%;
+        }
+    </style>
+</head>
+<body>
+    <img src="icons/sprite.svg" alt="">
+</body>
+</html>
