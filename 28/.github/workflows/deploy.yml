@@ -22,6 +22,7 @@ jobs:
       - run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
       - run: chmod 600 "$HOME/.ssh/key"
       # Build
+      - run: npm install -g npm
       - run: npm ci
       - run: npm run build
       # Deploy
