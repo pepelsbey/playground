@@ -1,0 +1,230 @@
+/* Bird */
+
+.bird {
+    position: relative;
+    margin: 0;
+    background-color: darkslategray;
+    width: 960px;
+    height: 960px;
+}
+
+/* Source */
+
+.bird__source {
+    position: absolute;
+    inset: 0;
+    content: url('bird.png');
+    opacity: 0;
+    pointer-events: none;
+    image-rendering: pixelated;
+}
+
+/* Head */
+
+.bird__head,
+.bird__head * {
+    position: absolute;
+}
+
+.bird__head {
+    box-sizing: border-box;
+    top: 205px;
+    left: 228px;
+    width: 212px;
+    height: 212px;
+    background-image: conic-gradient(
+        from -45deg,
+        darkslateblue 0deg 90deg,
+        midnightblue 90deg 180deg,
+        yellowgreen 180deg 270deg,
+        deepskyblue 270deg 360deg
+    );
+    border-radius: 50%;
+    border: 52px solid black;
+    border-color:
+        yellowgreen
+        deepskyblue
+        darkslateblue
+        midnightblue;
+    rotate: -45deg;
+}
+
+.bird__head::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    display: block;
+    width: 35px; height: 35px;
+    border: 3px solid black;
+    background:
+        radial-gradient(white 13%, transparent 0) -3px -4px no-repeat,
+        radial-gradient(black 50%, transparent 0),
+        darkorange;
+    border-radius: 50%;
+    translate: -50% -50%;
+}
+
+/* Body */
+
+.bird__body,
+.bird__body * {
+    position: absolute;
+}
+
+.bird__body {
+    top: 224px;
+    left: 242px;
+    width: 504px;
+    height: 504px;
+    background-image:
+        radial-gradient(
+            deepskyblue 70%,
+            transparent 0
+        ),
+        linear-gradient(
+            45deg,
+            lemonchiffon 42%,
+            transparent 0
+        );
+    background-position: -119px 90px, 0 0;
+    background-size: 212px 212px, 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+/* Neck */
+
+.bird__neck {
+    top: 5px;
+    left: 158px;
+    width: 175px;
+    height: 184px;
+    background:
+        radial-gradient(at 50% 50%, deepskyblue 70%, transparent 0),
+        linear-gradient(45deg, deepskyblue 50%, greenyellow 50%);
+    background-position: 70px 0, 0 0;
+    background-repeat: no-repeat;
+    transform-origin: top left;
+    rotate: 41deg;
+    mask-image: linear-gradient(
+        94deg,
+        black 93%,
+        transparent 0
+    );
+}
+
+/* Back */
+
+.bird__back {
+    top: 198px;
+    left: 176px;
+    width: 80px;
+    height: 40px;
+    background-color: midnightblue;
+    rotate: -45deg;
+    border-radius: 0 0 40px 40px;
+    box-shadow:
+        0 40px deepskyblue,
+        0 80px midnightblue,
+        0 120px deepskyblue,
+        0 160px midnightblue,
+        0 200px deepskyblue,
+        0 240px midnightblue,
+        0 280px lightskyblue,
+        0 320px midnightblue,
+        0 360px lightskyblue,
+        80px 0px midnightblue,
+        80px 40px yellowgreen,
+        80px 80px midnightblue,
+        80px 120px yellowgreen,
+        80px 160px midnightblue,
+        80px 200px yellowgreen,
+        80px 240px midnightblue,
+        80px 280px greenyellow,
+        80px 320px midnightblue,
+        80px 360px greenyellow;
+}
+
+/* Tail */
+
+.bird__tail {
+    top: 400px;
+    left: 80px;
+    width: 80px;
+    height: 140px;
+    background-color: midnightblue;
+    background-image: linear-gradient(
+        to left,
+        greenyellow 3px,
+        transparent 3px 19px,
+        yellowgreen 19px 22px,
+        transparent 22px 37px,
+        lightskyblue 37px
+    );
+    background-position: 20px 20px;
+    background-repeat: no-repeat;
+    background-size: 40px 100px;
+}
+
+/* Wing */
+
+.bird__wing {
+    top: 188px;
+    left: 92px;
+    width: 390px;
+    height: 350px;
+    background-image: conic-gradient(
+        from -61deg at 100% 100%,
+        darkolivegreen 16deg,
+        transparent 14deg
+    );
+    border-radius: 140px 0 0 0;
+}
+
+.bird__wing::before {
+    content: '';
+    position: absolute;
+    inset: 5px 0 0 0;
+    width: 128px;
+    height: 128px;
+    border-radius: 0 100% 0 0;
+    background-color: darkorange;
+}
+
+/* Legs */
+
+.bird__legs {
+    position: absolute;
+    top: 726px;
+    left: 484px;
+    width: 5px;
+    height: 110px;
+    background-color: black;
+    box-shadow: 22px 0 black;
+}
+
+
+/* Shadow */
+
+.bird__shadow {
+    position: absolute;
+    top: 795px;
+    left: 290px;
+    width: 410px;
+    height: 80px;
+    background-color: rgb(0 0 0 / 0.1);
+    border-radius: 50%;
+}
+
+/* Beak (Kluv) */
+
+.bird__beak {
+    position: absolute;
+    left: 60px;
+    top: 288px;
+    width: 170px;
+    height: 70px;
+    background: radial-gradient(transparent 55%, darkgray 0) -410px -8px / 800px 300px no-repeat;
+    box-shadow: -100px 123px 0 -100px black inset;
+    border-radius: 100% 0 0 0 / 50px 0 0 0;
+}

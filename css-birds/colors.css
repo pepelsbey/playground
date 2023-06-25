@@ -1,0 +1,12 @@
+.colors {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+}
+
+.colors__swatch {
+    aspect-ratio: 1 / 1;
+}
