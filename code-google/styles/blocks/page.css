@@ -1,0 +1,12 @@
+/* Page */
+
+.page,
+.page__body {
+	height: 100%;
+}
+
+.page__body {
+	margin: 0;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+}

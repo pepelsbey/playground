@@ -1,0 +1,35 @@
+/* Footer */
+
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: #f2f2f2;
+	color: #70757a;
+}
+
+/* Text */
+
+.footer__text {
+	width: 100%;
+	margin: 0;
+	padding: 15px 30px;
+	border-bottom: 1px solid #dadce0;
+}
+
+/* List */
+
+.footer__list {
+	display: flex;
+	margin: 0;
+	padding: 15px 30px;
+	list-style: none;
+}
+
+/* Link */
+
+.footer__link {
+	padding: 15px;
+	text-decoration: none;
+	color: #70757a;
+}

@@ -1,0 +1,25 @@
+/* Layout */
+
+.layout {
+	display: grid;
+	grid-template-columns: 1fr minmax(auto, 584px) 1fr;
+	grid-template-rows: min-content 1fr min-content;
+}
+
+/* Header */
+
+.layout__header {
+	grid-column: 1 / -1;
+}
+
+/* Main */
+
+.layout__main {
+	grid-column: 2 / -2;
+}
+
+/* Footer */
+
+.layout__footer {
+	grid-column: 1 / -1;
+}

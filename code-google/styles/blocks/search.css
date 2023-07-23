@@ -1,0 +1,39 @@
+/* Search */
+
+.search {
+	display: grid;
+	grid-template-columns: 44px 1fr 44px 44px;
+	height: 44px;
+	border: 1px solid #dfe1e5;
+	border-radius: 24px;
+}
+
+.search:is(:hover, :focus-within) {
+	box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+/* Icon */
+
+.search__icon {
+	place-self: center;
+	fill: #9aa0a6;
+}
+
+/* Input */
+
+.search__input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+/* Button */
+
+.search__button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}

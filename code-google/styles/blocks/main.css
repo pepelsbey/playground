@@ -1,0 +1,47 @@
+/* Main */
+
+.main {
+	padding: 15px 30px;
+	display: grid;
+	justify-items: center;
+	align-content: center;
+	row-gap: 30px;
+}
+
+/* Title */
+
+.main__title {
+	margin: 0;
+}
+
+/* Search */
+
+.main__search {
+	justify-self: stretch;
+}
+
+/* Buttons */
+
+.main__buttons {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin-top: 30px;
+}
+
+/* Locale */
+
+.main__locale {
+	margin: 0;
+}
+
+/* Link */
+
+.main__link {
+	color: #1a0dab;
+	text-decoration: none;
+}
+
+.main__link:hover {
+	text-decoration: underline;
+}

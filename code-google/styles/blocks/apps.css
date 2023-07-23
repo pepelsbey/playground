@@ -1,0 +1,20 @@
+/* Apps */
+
+.apps {
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 50%;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.apps__icon {
+	margin: auto;
+	display: block;
+	fill: #5f6368;
+}
+
+.apps:is(:hover, :focus) {
+	background-color: #f2f2f2;
+}

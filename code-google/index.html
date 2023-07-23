@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Google</title>
+	<link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="page__body layout">
+	<header class="layout__header header">
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li><a class="navigation__link" href="">About</a></li>
+				<li><a class="navigation__link" href="">Store</a></li>
+				<li class="navigation__gap"><a class="navigation__link" href="">Gmail</a></li>
+				<li><a class="navigation__link" href="">Images</a></li>
+			</ul>
+			<button class="apps" type="button" aria-label="Apps">
+				<svg class="apps__icon" width="24" height="24">
+					<use href="images/icons.svg#apps"/>
+				</svg>
+			</button>
+			<a class="button button--action" href="">Sign In</a>
+		</nav>
+	</header>
+	<main class="layout__main main">
+		<h1 class="main__title">
+			<img class="main__logo" src="images/logo.svg" width="272" height="92" fetchpriority="high" alt="Google">
+		</h1>
+		<search class="main__search">
+			<form action="">
+				<div class="search">
+					<svg class="search__icon" width="24" height="24" aria-hidden="true">
+						<use href="images/icons.svg#search"/>
+					</svg>
+					<input class="search__input" type="search" aria-label="Search">
+					<button class="search__button" type="button" aria-label="Search by Voice">
+						<svg class="search__feature" width="24" height="24">
+							<use href="images/icons.svg#voice"/>
+						</svg>
+					</button>
+					<button class="search__button" type="button" aria-label="Search by Image">
+						<svg class="search__feature" width="24" height="24">
+							<use href="images/icons.svg#image"/>
+						</svg>
+					</button>
+				</div>
+				<div class="main__buttons">
+					<button class="button button--plain" type="button">Google Search</button>
+					<button class="button button--plain" type="button">I’m Feeling Lucky</button>
+				</div>
+			</form>
+		</search>
+		<p class="main__locale">
+			Google offered in:
+			<a class="main__link" href="">Deutsch</a>
+		</p>
+	</main>
+	<footer class="layout__footer footer">
+		<p class="footer__text">Germany</p>
+		<ul class="footer__list">
+			<li><a class="footer__link" href="">Advertising</a></li>
+			<li><a class="footer__link" href="">Business</a></li>
+			<li><a class="footer__link" href="">How Search works</a></li>
+		</ul>
+		<ul class="footer__list">
+			<li><a class="footer__link" href="">Privacy</a></li>
+			<li><a class="footer__link" href="">Terms</a></li>
+			<li><a class="footer__link" href="">Settings</a></li>
+		</ul>
+	</footer>
+</body>
+</html>

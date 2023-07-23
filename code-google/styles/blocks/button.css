@@ -1,0 +1,35 @@
+/* Button */
+
+.button {
+	margin: 0;
+	padding: 9px 23px;
+	border-radius: 4px;
+	text-decoration: none;
+	font-size: inherit;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+.button:is(:hover, :focus) {
+	box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+/* Plain */
+
+.button--plain {
+	border: 1px solid #f8f9fa;
+	background-color: #f8f9fa;
+	color: #3c4043;
+}
+
+/* Action */
+
+.button--action {
+	border: 1px solid #1a73e8;
+	background-color: #1a73e8;
+	color: #ffffff;
+}
+
+.button--action:is(:hover, :focus) {
+	background-color: #1b66c9;
+}

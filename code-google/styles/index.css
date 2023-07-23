@@ -1,0 +1,11 @@
+@import url('global.css');
+
+@import url('blocks/page.css');
+@import url('blocks/layout.css');
+@import url('blocks/header.css');
+@import url('blocks/navigation.css');
+@import url('blocks/apps.css');
+@import url('blocks/button.css');
+@import url('blocks/main.css');
+@import url('blocks/search.css');
+@import url('blocks/footer.css');
