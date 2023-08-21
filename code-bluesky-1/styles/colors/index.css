@@ -1,0 +1,15 @@
+/* Colors */
+
+:root {
+	/* TODO store colors in RGB as strings */
+	--color-black: #000000;
+	--color-darker: #26272d;
+	--color-dark: #545664;
+	--color-middle: #8d8e96;
+	--color-light: #b6b6c9;
+	--color-lighter: #f3f3f8;
+	--color-white: #ffffff;
+
+	--color-blue: #0085ff;
+	--color-sky: #5a71fa;
+}

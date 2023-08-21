@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bluesky</title>
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
+</head>
+<body class="page__body">
+	<header class="header">
+		<nav>
+			<a class="header__avatar" href="">
+				<img src="images/avatar.png" width="64" height="64" alt="Profile avatar.">
+			</a>
+			<ul class="header__navigation navigation">
+				<li class="navigation__item">
+					<a class="navigation__link" href="">
+						<svg class="navigation__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24">
+							<path fill="none" stroke="currentColor" stroke-width="4" d="M 23.951 2 C 23.631 2.011 23.323 2.124 23.072 2.322 L 8.859 13.52 C 7.055 14.941 6 17.114 6 19.41 L 6 38.5 C 6 39.864 7.136 41 8.5 41 L 18.5 41 C 19.864 41 21 39.864 21 38.5 L 21 28.5 C 21 28.205 21.205 28 21.5 28 L 26.5 28 C 26.795 28 27 28.205 27 28.5 L 27 38.5 C 27 39.864 28.136 41 29.5 41 L 39.5 41 C 40.864 41 42 39.864 42 38.5 L 42 19.41 C 42 17.114 40.945 14.941 39.141 13.52 L 24.928 2.322 C 24.65 2.103 24.304 1.989 23.951 2 Z"/>
+						</svg>
+						<span class="navigation__text">
+							Home
+						</span>
+					</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="">
+						<svg class="navigation__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 24" width="24" height="24" stroke-width="2" fill="none" stroke="currentColor" stroke-linecap="round">
+							<ellipse cx="12" cy="11" rx="9" ry="9"/>
+							<line x1="19" y1="17.3" x2="23.5" y2="21"/>
+						</svg>
+						<span class="navigation__text">
+							Search
+						</span>
+					</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="">
+						<svg class="navigation__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" stroke-width="1.75" stroke="currentColor" width="24" height="24">
+							<path d="M 12.705346,15.777547 C 14.4635,17.5315 14.7526,17.8509 14.9928,18.1812 c 0.2139,0.2943 0.3371,0.5275 0.3889,0.6822 C 14.0859,19.5872 12.5926,20 11,20 6.02944,20 2,15.9706 2,11 2,9.4151 2.40883,7.9285 3.12619,6.63699 3.304,6.69748 3.56745,6.84213 3.89275,7.08309 4.3705644,7.4380098 4.7486794,7.8160923 6.4999995,9.5689376 8.2513197,11.321783 10.947192,14.023595 12.705346,15.777547 Z"></path><path d="M8 1.62961C9.04899 1.22255 10.1847 1 11.3704 1C16.6887 1 21 5.47715 21 11C21 12.0452 20.8456 13.053 20.5592 14" stroke-linecap="round"/>
+							<path d="M9 5.38745C9.64553 5.13695 10.3444 5 11.0741 5C14.3469 5 17 7.75517 17 11.1538C17 11.797 16.905 12.4172 16.7287 13" stroke-linecap="round"/>
+							<path d="M12 12C12 12.7403 11.5978 13.3866 11 13.7324L8.26756 11C8.61337 10.4022 9.25972 10 10 10C11.1046 10 12 10.8954 12 12Z" fill="currentColor" stroke="none"/>
+						</svg>
+						<span class="navigation__text">
+							My Feeds
+						</span>
+					</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="">
+						<svg class="navigation__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" stroke-width="2" fill="none" stroke="currentColor">
+							<path d="M 11.642 2 H 12.442 A 8.6 8.55 0 0 1 21.042 10.55 V 18.1 A 1 1 0 0 1 20.042 19.1 H 4.042 A 1 1 0 0 1 3.042 18.1 V 10.55 A 8.6 8.55 0 0 1 11.642 2 Z"/>
+							<line x1="9" y1="22" x2="15" y2="22"/>
+						</svg>
+						<span class="navigation__text">
+							Notifications
+						</span>
+					</a>
+				</li>
+				<li class="navigation__item navigation__item--hidden">
+					<a class="navigation__link" href="">
+						<svg class="navigation__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 76 76" fill="none" stroke-width="5.5" stroke-linecap="round" stroke="currentColor">
+							<path d="M33.5 37V11.5C33.5 8.46243 31.0376 6 28 6V6C24.9624 6 22.5 8.46243 22.5 11.5V48V48C22.5 48.5802 21.8139 48.8874 21.3811 48.501L13.2252 41.2189C10.72 38.9821 6.81945 39.4562 4.92296 42.228L4.77978 42.4372C3.17708 44.7796 3.50863 47.9385 5.56275 49.897L16.0965 59.9409C20.9825 64.5996 26.7533 68.231 33.0675 70.6201V70.6201C38.8234 72.798 45.1766 72.798 50.9325 70.6201L51.9256 70.2444C57.4044 68.1713 61.8038 63.9579 64.1113 58.5735V58.5735C65.6874 54.8962 66.5 50.937 66.5 46.9362V22.5C66.5 19.4624 64.0376 17 61 17V17C57.9624 17 55.5 19.4624 55.5 22.5V36.5"/>
+							<path d="M55.5 37V11.5C55.5 8.46243 53.0376 6 50 6V6C46.9624 6 44.5 8.46243 44.5 11.5V37"/>
+							<path d="M44.5 37V8.5C44.5 5.46243 42.0376 3 39 3V3C35.9624 3 33.5 5.46243 33.5 8.5V37"/>
+						</svg>
+						<span class="navigation__text">
+							Moderation
+						</span>
+					</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="">
+						<svg class="navigation__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2.04" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M17.5 11.38a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"/>
+							<path d="M14 18.38c-4 0-6.33 2.33-7 3.5.83.83 3.4 2.5 7 2.5s6.17-1.67 7-2.5c-.67-1.17-3-3.5-7-3.5Z"/>
+							<path fill="none" d="M20.98 21.85a10.5 10.5 0 1 0-13.96 0m13.96 0a10.46 10.46 0 0 1-13.96 0"/>
+						</svg>
+						<span class="navigation__text">
+							Profile
+						</span>
+					</a>
+				</li>
+				<li class="navigation__item navigation__item--hidden">
+					<a class="navigation__link" href="">
+						<svg class="navigation__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor">
+							<path d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"/>
+							<path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+						</svg>
+						<span class="navigation__text">
+							Settings
+						</span>
+					</a>
+				</li>
+			</ul>
+			<button class="header__new-post new-post" type="button">
+				<svg class="new-post__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="29" height="29" fill="none" stroke="currentColor">
+					<path d="M 20 9 L 20 16 C 20 18.209 18.209 20 16 20 L 8 20 C 5.791 20 4 18.209 4 16 L 4 8 C 4 5.791 5.791 4 8 4 L 15 4" stroke-width="1.5"/>
+					<line stroke-linecap="round" x1="10" y1="14" x2="18.5" y2="5.5" stroke-width="2.25"/>
+					<line stroke-linecap="round" x1="20.5" y1="3.5" x2="21" y2="3" stroke-width="2.25"></line>
+				</svg>
+				<span class="new-post__text">
+					New post
+				</span>
+			</button>
+		</nav>
+	</header>
+	<main>
+		<div class="profile">
+			<button class="profile__back back-button" type="button">
+				<svg class="back-button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="18" width="18">
+					<path fill="currentColor" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+				</svg>
+			</button>
+
+			<img class="profile__cover" src="images/cover.png" width="300" height="100" alt="Profile cover.">
+			<img class="profile__avatar" src="images/avatar.png" width="80" height="80" alt="Profile avatar.">
+
+			<div class="profile__contols">
+				<button class="profile__button profile__button--text" type="button">
+					Edit Profile
+				</button>
+				<button class="profile__button profile__button--icon" type="button" aria-label="More…">
+					<svg class="profile__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="20" width="20">
+						<path fill="currentColor" d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"/>
+					</svg>
+				</button>
+			</div>
+		</div>
+
+		<h1>Vadim Makeev</h1>
+		<p>@pepelsbey.dev</p>
+
+		<ul>
+			<li><a href="">9 followers</a></li>
+			<li><a href="">28 following</a></li>
+			<li>0 posts</li>
+		</ul>
+
+		<p>Frontend developer in love with the Web, browsers, bicycles, and podcasting. He/him, Google Developer Expert, co-host of The F-Word podcast.</p>
+
+		<ul>
+			<li><button type="button">Posts</button></li>
+			<li><button type="button">Posts & replies</button></li>
+			<li><button type="button">Media</button></li>
+		</ul>
+
+		<section>
+			<p>No posts yet!</p>
+		</section>
+		<section hidden>
+			<p>No posts & replies yet!</p>
+		</section>
+		<section hidden>
+			<p>No media yet!</p>
+		</section>
+	</main>
+	<footer class="footer">
+		<form class="footer__form" action="">
+			<label for="search">Search</label>
+			<input class="footer__search" type="text" placeholder="Search" inputmode="search" id="search">
+
+			<ul class="footer__list">
+				<li>
+					<a class="footer__link" href="">Send feedback</a>
+				</li>
+				<li>
+					<a class="footer__link" href="">Privacy</a>
+				</li>
+				<li>
+					<a class="footer__link" href="">Terms</a>
+				</li>
+				<li>
+					<a class="footer__link" href="">Help</a>
+				</li>
+			</ul>
+
+			<button class="footer__invite" type="button">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" height="16" width="16">
+					<path fill="currentColor" d="M64 64C28.7 64 0 92.7 0 128v64c0 8.8 7.4 15.7 15.7 18.6C34.5 217.1 48 235 48 256s-13.5 38.9-32.3 45.4C7.4 304.3 0 311.2 0 320v64c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V320c0-8.8-7.4-15.7-15.7-18.6C541.5 294.9 528 277 528 256s13.5-38.9 32.3-45.4c8.3-2.9 15.7-9.8 15.7-18.6V128c0-35.3-28.7-64-64-64H64zm64 112l0 160c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H144c-8.8 0-16 7.2-16 16zM96 160c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V160z"/>
+				</svg>
+				1 invite code available
+			</button>
+		</form>
+	</footer>
+</body>
+</html>

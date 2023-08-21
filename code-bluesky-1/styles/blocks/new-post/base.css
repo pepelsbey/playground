@@ -1,0 +1,9 @@
+/* Base */
+
+.new-post {
+	margin: 0;
+	padding: 0;
+	border: none;
+	color: var(--color-white);
+	cursor: pointer;
+}

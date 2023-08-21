@@ -1,0 +1,36 @@
+/* Mobile */
+
+@media (width < 1230px) {
+
+.new-post {
+	position: fixed;
+	bottom: 114px;
+	right: 24px;
+	display: grid;
+	place-items: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-image: linear-gradient(
+		136.8deg,
+		var(--color-sky),
+		var(--color-blue)
+	);
+}
+
+/* Icon */
+
+.new-post__icon {
+	display: block;
+}
+
+/* Text */
+
+.new-post__text {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}
+
+}

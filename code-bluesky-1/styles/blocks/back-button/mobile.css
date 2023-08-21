@@ -1,0 +1,13 @@
+/* Mobile */
+
+@media (width < 1230px) {
+
+.back-button {
+	border-radius: 50%;
+	/* TODO: use proper vars instead */
+	background-color: rgb(0 0 0 / 0.53);
+	backdrop-filter: blur(10px);
+	color: var(--color-white);
+}
+
+}

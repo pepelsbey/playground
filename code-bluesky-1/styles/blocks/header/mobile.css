@@ -1,0 +1,11 @@
+/* Mobile */
+
+@media (width < 1230px) {
+
+/* Avatar */
+
+.header__avatar {
+	display: none;
+}
+
+}

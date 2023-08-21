@@ -1,0 +1,13 @@
+/* Dark */
+
+:root {
+	color-scheme: dark;
+
+	--color-back-primary: var(--color-black);
+	--color-back-secondary: var(--color-darker);
+
+	--color-text-primary: var(--color-white);
+	--color-text-secondary: var(--color-lighter);
+
+	--color-border: var(--color-darker);
+}
