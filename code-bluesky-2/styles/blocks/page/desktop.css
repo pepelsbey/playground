@@ -1,0 +1,31 @@
+/* Desktop */
+
+@media (width >= 1230px) {
+
+	/* Body */
+
+	.page__body {
+		display: grid;
+		grid-template-columns: 1fr 600px 1fr;
+	}
+
+	/* Header */
+
+	.page__header {
+		justify-self: end;
+	}
+
+	/* Main */
+
+	.page__main {
+		border: 1px solid var(--color-border);
+		border-width: 0 1px;
+	}
+
+	/* Footer */
+
+	.page__footer {
+		justify-self: start;
+	}
+
+}

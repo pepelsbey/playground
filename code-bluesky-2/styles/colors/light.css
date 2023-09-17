@@ -1,0 +1,14 @@
+/* Light */
+
+:root {
+	color-scheme: light;
+
+	--color-back-primary: rgb(var(--color-white));
+	--color-back-secondary: rgb(var(--color-lighter));
+
+	--color-text-primary: rgb(var(--color-black));
+	--color-text-secondary: rgb(var(--color-darker));
+	--color-text-tertiary: rgb(var(--color-dark));
+
+	--color-border: rgb(var(--color-lighter));
+}

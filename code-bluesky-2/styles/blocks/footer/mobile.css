@@ -1,0 +1,9 @@
+/* Mobile */
+
+@media (width < 1230px) {
+
+	.footer {
+		display: none;
+	}
+
+}

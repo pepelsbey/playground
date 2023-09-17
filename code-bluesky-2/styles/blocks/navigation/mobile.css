@@ -1,0 +1,49 @@
+/* Mobile */
+
+@media (width < 1230px) {
+
+	.navigation {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		padding-bottom: 6px;
+		border-top: 1px solid var(--color-border);
+		background-color: var(--color-back-primary);
+	}
+
+	/* Item */
+
+	.navigation__item {
+		flex-grow: 1;
+	}
+
+	.navigation__item--hidden {
+		display: none;
+	}
+
+	/* Link */
+
+	.navigation__link {
+		display: block;
+		margin: auto;
+		padding: 13px 0
+	}
+
+	/* Icon */
+
+	.navigation__icon {
+		margin: auto;
+	}
+
+	/* Text */
+
+	.navigation__text {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		opacity: 0;
+	}
+
+}

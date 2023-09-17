@@ -1,0 +1,61 @@
+/* Base */
+
+.profile {
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	grid-template-rows: 150px 42px;
+}
+
+/* Cover */
+
+.profile__cover {
+	grid-column: span 2;
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+}
+
+/* Avatar */
+
+.profile__avatar {
+	display: block;
+	margin-top: -40px;
+	margin-left: 12px;
+	border-radius: 50%;
+	outline: 2px solid var(--color-back-primary);
+}
+
+/* Controls */
+
+.profile__controls {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 12px 0 0;
+}
+
+/* Button */
+
+.profile__button {
+	margin: 0;
+	border: none;
+	border-radius: 50px;
+	background-color: var(--color-back-secondary);
+	font-family: inherit;
+	font-size: 14px;
+}
+
+.profile__button--text {
+	padding: 9px 24px;
+}
+
+.profile__button--icon {
+	padding: 5px 12px;
+}
+
+/* Icon */
+
+.profile__icon {
+	display: block;
+}

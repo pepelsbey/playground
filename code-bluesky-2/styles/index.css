@@ -1,0 +1,19 @@
+/* Global */
+
+@import url('global/box-model.css');
+
+/* Colors */
+
+@import url('colors/index.css');
+
+/* Blocks */
+
+@import url('blocks/page/index.css');
+@import url('blocks/header/index.css');
+@import url('blocks/navigation/index.css');
+@import url('blocks/new-post/index.css');
+@import url('blocks/back-button/index.css');
+@import url('blocks/profile/index.css');
+@import url('blocks/user-info/index.css');
+@import url('blocks/timeline/index.css');
+@import url('blocks/footer/index.css');
