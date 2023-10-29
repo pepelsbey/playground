@@ -1,0 +1,16 @@
+/* Desktop */
+
+@media (width >= 1230px) {
+
+	.back-button {
+		background-color: transparent;
+	}
+
+	/* Icon */
+
+	.back-button__icon {
+		width: 24px;
+		height: 24px;
+	}
+
+}

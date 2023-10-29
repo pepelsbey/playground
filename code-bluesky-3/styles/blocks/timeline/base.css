@@ -1,0 +1,53 @@
+/* Base */
+
+/* Tabs */
+
+.timeline__tabs {
+	margin: 0;
+	padding: 0 12px;
+	list-style: none;
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	overflow-x: auto;
+	scrollbar-color: transparent transparent;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+/* Tabs Button */
+
+.timeline__tabs-button {
+	margin: 0;
+	padding: 8px 10px 12px;
+	border: none;
+	border-bottom: 3px solid transparent;
+	background-color: transparent;
+	white-space: nowrap;
+	font-weight: bold;
+	font-family: inherit;
+	font-size: inherit;
+	color: var(--color-text-tertiary);
+}
+
+.timeline__tabs-button[aria-selected='true'] {
+	border-color: var(--color-text-primary);
+}
+
+/* No Content */
+
+.timeline__no-content {
+	display: grid;
+	row-gap: 20px;
+	place-items: center;
+	padding: 40px 36px;
+	color: rgb(var(--color-middle));
+}
+
+/* No Content Icon */
+
+.timeline__no-content-icon {
+	color: rgb(var(--color-light));
+}

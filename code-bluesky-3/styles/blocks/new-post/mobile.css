@@ -1,0 +1,33 @@
+/* Mobile */
+
+@media (width < 1230px) {
+
+	.new-post {
+		display: grid;
+		place-items: center;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background-image: linear-gradient(
+			136.8deg,
+			rgb(var(--color-sky)),
+			rgb(var(--color-blue))
+		);
+	}
+
+	/* Icon */
+
+	.new-post__icon {
+		display: block;
+	}
+
+	/* Text */
+
+	.new-post__text {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		opacity: 0;
+	}
+
+}

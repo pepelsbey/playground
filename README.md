@@ -2,7 +2,8 @@
 
 [youtube.com/pepelsbey](https://youtube.com/pepelsbey)
 
-- [🔹 Сверстать Блюскай, часть 2](code-bluesky-2) (лайв)
+- [🔹🔹🔹 Сверстать Блюскай, часть 3](code-bluesky-3) (лайв)
+- [🔹🔹 Сверстать Блюскай, часть 2](code-bluesky-2) (лайв)
 - [🔹 Сверстать Блюскай, часть 1](code-bluesky-1) (лайв)
 - [🔍 Сверстать Гугл](code-google) (лайв)
 - [🐤 Птички на CSS](css-birds) (лайв)

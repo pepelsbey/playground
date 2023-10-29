@@ -1,0 +1,28 @@
+/* Desktop */
+
+@media (width >= 1230px) {
+
+	/* Item */
+
+	.navigation__item {
+		font-size: 20px;
+	}
+
+	/* Link */
+
+	.navigation__link {
+		display: flex;
+		gap: 10px;
+		padding: 15px;
+		border-radius: 8px;
+
+		&:hover {
+			background-color: var(--color-back-secondary);
+		}
+
+		&[aria-current] {
+			font-weight: bold;
+		}
+	}
+
+}

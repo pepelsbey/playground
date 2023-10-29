@@ -1,0 +1,48 @@
+/* Desktop */
+
+@media (width >= 1230px) {
+
+	.footer {
+		padding: 24px;
+	}
+
+	/* Item */
+
+	.footer__item {
+		padding: 18px 9px;
+	}
+
+	.footer__item--search {
+		padding: 0 0 18px;
+	}
+
+	.footer__item + .footer__item {
+		border-top: 1px solid var(--color-border);
+	}
+
+	/* Option */
+
+	.footer__options {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		row-gap: 12px;
+	}
+
+	/* Pages */
+
+	.footer__pages {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.footer__pages-item + .footer__pages-item::before {
+		content: ' ·';
+		color: var(--color-text-tertiary);
+	}
+
+}

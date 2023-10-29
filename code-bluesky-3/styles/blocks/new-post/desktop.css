@@ -1,0 +1,23 @@
+/* Desktop */
+
+@media (width >= 1230px) {
+
+	.new-post {
+		display: flex;
+		column-gap: 8px;
+		align-items: center;
+		margin: 0;
+		padding: 10px 16px;
+		border-radius: 24px;
+		background-color: rgb(var(--color-blue));
+		font-weight: bold;
+	}
+
+	/* Icon */
+
+	.new-post__icon {
+		width: 19px;
+		height: 19px;
+	}
+
+}

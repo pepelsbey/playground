@@ -1,0 +1,12 @@
+/* Mobile */
+
+@media (width < 1230px) {
+
+	.back-button {
+		border-radius: 50%;
+		background-color: rgb(var(--color-black) / 0.53);
+		backdrop-filter: blur(10px);
+		color: rgb(var(--color-white));
+	}
+
+}
